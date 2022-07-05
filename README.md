@@ -9,9 +9,9 @@ tool: photoshop/editplus/XE제로보드/워드프레스
 HTML/CSS/JAVASCRIPT/JQUERY
 
 - 티켓몬스터(티몬) 근무 (2013. 09 ~ 2014. 08)
- -- 티몬 프로모션(이벤트) 다수 페이지 제작
- -- 티몬 검색 상세페이지 – PC 마크업
- -- 티몬 admin 페이지 유지보수 – PC 마크업
+ - 티몬 프로모션(이벤트) 다수 페이지 제작
+ - 티몬 검색 상세페이지 – PC 마크업
+ - 티몬 admin 페이지 유지보수 – PC 마크업
 -tool: photoshop/editplus
 -HTML/CSS
 
