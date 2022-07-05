@@ -1,0 +1,115 @@
+@charset "utf-8";
+
+.wrap_tvcf{padding:0 !important}
+.wrap_tvcf #header{float:none;clear:both;margin:0 auto}
+.wrap_tvcf #inner_wrap{left:0;margin-left:0}
+.wrap_tvcf #inner_wrap,
+.wrap_tvcf #content,
+.wrap_tvcf #container{float:none;width:100%}
+.wrap_tvcf #content{margin-top:-3px;padding-top:3px;background:url(http://img1.tmon.kr/promotion/tvcf_bg.png) repeat-x}
+
+.tvcf_ct{width:100%}
+.tvcf_ct.tvcf_ct1{background:#fff url(http://img1.tmon.kr/promotion/140124_tvcf1.png) no-repeat 50% 0}
+.tvcf_ct.tvcf_ct2{background:#fff url(http://img1.tmon.kr/promotion/140124_tvcf2.png) no-repeat 50% 0}
+.tvcf_ct.tvcf_ct3{background:#fff url(http://img1.tmon.kr/promotion/140124_tvcf3.png) no-repeat 50% 0}
+.tvcf_ct.tvcf_ct4{background:#fff url(http://img1.tmon.kr/promotion/140124_tvcf4.png) no-repeat 50% 0}
+.tvcf_ct.tvcf_ct5{background:#fff url(http://img1.tmon.kr/promotion/140124_tvcf5.png) no-repeat 50% 0}
+.tvcf_ct.tvcf_ct6{background:#fff url(http://img1.tmon.kr/promotion/140124_tvcf6.png) no-repeat 50% 0}
+.tvcf_ct.tvcf_ct7{background:#fff url(http://img1.tmon.kr/promotion/140124_tvcf7.png) no-repeat 50% 0}
+.tvcf_ct .tvcf_mov{width:990px;margin:0 auto;padding-top:252px}
+.tvcf_ct .tvcf_mov .vod_area{width:850px;height:513px;margin:0 auto;background:#f0f0f0}
+.tvcf_ct .vod_lst_area{position:relative;height:175px;margin-top:26px;margin-bottom:34px}
+.tvcf_ct .vod_lst_area a{display:block;width:27px;height:57px;text-indent:-9999px}
+.tvcf_ct .vod_lst_area .btn_prev{position:absolute;left:0;top:60px;background:url(http://img1.tmon.kr/promotion/140124_tvcf_lst2.png) no-repeat -510px 0}
+.tvcf_ct .vod_lst_area .btn_prev:hover{background-position:-510px -64px}
+.tvcf_ct .vod_lst_area .btn_next{position:absolute;right:0;top:60px;background:url(http://img1.tmon.kr/promotion/140124_tvcf_lst2.png) no-repeat -564px 0}
+.tvcf_ct .vod_lst_area .btn_next:hover{background-position:-564px -64px}
+.tvcf_ct .vod_lst{overflow:hidden;height:200px;margin-left:64px}
+.tvcf_ct .vod_lst li{float:left;height:172px;margin:12px}
+.tvcf_ct .vod_lst li a{width:148px;height:172px;background:url(http://img1.tmon.kr/promotion/140124_tvcf_lst3.png) no-repeat}
+.tvcf_ct .vod_lst .tvcf_lst1 a{background-position:0px 0px}
+.tvcf_ct .vod_lst .tvcf_lst1.on a{background-position:0px -180px}
+.tvcf_ct .vod_lst .tvcf_lst1 a:hover{background-position:0px -180px}
+.tvcf_ct .vod_lst .tvcf_lst2 a{background-position:-171px 0px}
+.tvcf_ct .vod_lst .tvcf_lst2.on a{background-position:-171px -180px}
+.tvcf_ct .vod_lst .tvcf_lst2 a:hover{background-position:-171px -180px}
+.tvcf_ct .vod_lst .tvcf_lst3 a{background-position:-342px 0px}
+.tvcf_ct .vod_lst .tvcf_lst3.on a{background-position:-342px -180px}
+.tvcf_ct .vod_lst .tvcf_lst3 a:hover{background-position:-342px -180px}
+.tvcf_ct .vod_lst .tvcf_lst4 a{background-position:0px -541px}
+.tvcf_ct .vod_lst .tvcf_lst4.on a{background-position:0 -717px}
+.tvcf_ct .vod_lst .tvcf_lst4 a:hover{background-position:0 -717px}
+.tvcf_ct .vod_lst .tvcf_lst5 a{background-position:-171px -541px}
+.tvcf_ct .vod_lst .tvcf_lst5.on a{background-position:-171px -717px}
+.tvcf_ct .vod_lst .tvcf_lst5 a:hover{background-position:-171px -717px}
+.tvcf_ct .vod_lst .tvcf_lst6 a{background-position:-343px -541px}
+.tvcf_ct .vod_lst .tvcf_lst6.on a{background-position:-343px -717px}
+.tvcf_ct .vod_lst .tvcf_lst6 a:hover{background-position:-343px -717px}
+.tvcf_ct .vod_lst .tvcf_lst7 a{background-position:-514px -541px}
+.tvcf_ct .vod_lst .tvcf_lst7.on a{background-position:-514px -717px}
+.tvcf_ct .vod_lst .tvcf_lst7 a:hover{background-position:-514px -717px}
+.tvcf_ct .vod_lst .tvcf_lst8 a{background-position:-684px -541px}
+.tvcf_ct .vod_lst .tvcf_lst8.on a{background-position:-684px -717px}
+.tvcf_ct .vod_lst .tvcf_lst8 a:hover{background-position:-684px -717px}
+.tvcf_ct .vod_lst .tvcf_lst9 a{background-position:-855px -541px}
+.tvcf_ct .vod_lst .tvcf_lst9.on a{background-position:-855px -717px}
+.tvcf_ct .vod_lst .tvcf_lst9 a:hover{background-position:-855px -717px}
+.tvcf_ct .event_prmt{height:660px;background:url(http://img1.tmon.kr/promotion/140124_tvcf_event1_1.png) no-repeat 50% 0}
+.tvcf_ct .event_prmt2{height:987px;background:url(http://img1.tmon.kr/promotion/140124_tvcf_event2.png) no-repeat 50% 0}
+.tvcf_ct .event_ct{width:990px;margin:0 auto;padding-top:320px;text-align:center}
+.tvcf_ct .event_ct .event_cnt{font-size:53px;color:#615f5f}
+.tvcf_ct .event_ct .event_cnt span{display:inline-block;height:27px;background:url(http://img2.tmon.kr/promotion/140124_tvcf_lst3.png) no-repeat;font-size:0;line-height:999px;vertical-align:middle}
+.tvcf_ct .event_ct .event_cnt .first{width:164px;margin-right:12px;background-position:-509px -159px}
+.tvcf_ct .event_ct .event_cnt .last{width:117px;margin-left:12px;background-position:-509px -197px}
+.tvcf_ct .event_ct .event_cnt em{width:175px;color:#2d2d2f;font-size:53px;font-family:verdana;font-weight:bold;letter-spacing:-5px;text-align:right}
+.tvcf_ct .event_ct a{display:inline-block;overflow:hidden;width:283px;height:72px;line-height:999px}
+.tvcf_ct .event_ct .btn_twitter{margin:24px 0 0 210px}
+
+.event_prmt2 .vote{width:662px;margin:0 auto}
+.event_prmt2 .vote_lst{position:relative;width:660px;height:387px;text-align:center;background:url(http://img1.tmon.kr/promotion/140124_tvcf_vote.png) no-repeat}
+.event_prmt2 .vote_lst li{float:left;width:147px;height:187px;margin:0 12px 0 12px}
+.event_prmt2 .vote_lst li.lst1{margin-left:0;margin-right:12px}
+.event_prmt2 .vote_lst li.lst4{margin-left:12px;margin-right:0}
+.event_prmt2 .vote_lst li.lst5{margin:20px 12px 0 85px}
+.event_prmt2 .vote_lst li.lst6{margin:20px 12px 0 12px}
+.event_prmt2 .vote_lst li.lst7{margin:20px 0 0 12px}
+.event_prmt2 .vote_lst li .input_rdo{position:absolute;width:20px;height:20px;background:url(http://img1.tmon.kr/promotion/140124_tvcf_rdo.png) no-repeat}
+.event_prmt2 .vote_lst li input[type=radio]{visibility:hidden}
+.event_prmt2 .vote_lst li .input_rdo.on{width:20px;height:20px;background:url(http://img1.tmon.kr/promotion/140124_tvcf_rdo_on.png) no-repeat}
+.event_prmt2 .vote_lst li.lst1 .input_rdo{top:160px;left:29px}
+.event_prmt2 .vote_lst li.lst2 .input_rdo{top:160px;left:193px}
+.event_prmt2 .vote_lst li.lst3 .input_rdo{top:160px;left:365px}
+.event_prmt2 .vote_lst li.lst4 .input_rdo{top:160px;left:550px}
+.event_prmt2 .vote_lst li.lst5 .input_rdo{top:368px;left:114px}
+.event_prmt2 .vote_lst li.lst6 .input_rdo{top:368px;left:278px}
+.event_prmt2 .vote_lst li.lst7 .input_rdo{top:368px;left:450px}
+.event_prmt2 .vote_lst li label{display:block;width:147px;height:187px;text-indent:-9999px}
+.event_prmt2 .vote_lst li .r_tvcf1{background-position:0 0}
+.event_prmt2 .vote_lst li .r_tvcf2{background-position:-171px 0}
+.event_prmt2 .vote_lst li .r_tvcf3{background-position:-342px 0}
+.event_prmt2 .vote_lst li .r_tvcf4{background-position:-513px 0}
+.event_prmt2 .vote_lst li .r_tvcf5{background-position:-85px -207px}
+.event_prmt2 .vote_lst li .r_tvcf6{background-position:-256px -207px}
+.event_prmt2 .vote_lst li .r_tvcf7{background-position:-427px -207px}
+.event_prmt2 .vote .btn_vt{margin-top:24px;background:url(http://img1.tmon.kr/promotion/140124_tvcf_lst3.png) no-repeat -700px -894px}
+
+.event_prmt2 .vote_result{width:680px;margin:0 auto}
+.event_prmt2 .vote_result .result_txt{width:475px;height:120px;margin-left:104px;background:url(http://img1.tmon.kr/promotion/140124_tvcf_lst3.png) no-repeat 0 -906px;text-indent:-9999px}
+.event_prmt2 .vote_result .vresult_lst{width:100%;margin-top:38px}
+.event_prmt2 .vote_result .vresult_lst li{height:26px;margin-bottom:16px;text-align:left}
+.event_prmt2 .vote_result .vresult_lst li .txt{float:left;display:inline-block;overflow:hidden;width:171px;height:25px;background:url(http://img1.tmon.kr/promotion/140124_tvcf_lst3.png) no-repeat;line-height:999px}
+.event_prmt2 .vote_result .vresult_lst li .txt1{background-position:0 -1058px}
+.event_prmt2 .vote_result .vresult_lst li .txt2{background-position:0 -1093px}
+.event_prmt2 .vote_result .vresult_lst li .txt3{background-position:0 -1134px}
+.event_prmt2 .vote_result .vresult_lst li .txt4{background-position:0 -1174px}
+.event_prmt2 .vote_result .vresult_lst li .txt5{background-position:0 -1214px}
+.event_prmt2 .vote_result .vresult_lst li .txt6{background-position:0 -1254px}
+.event_prmt2 .vote_result .vresult_lst li .txt7{background-position:0 -1294px}
+.vresult_lst li .img_graph{float:left;overflow:hidden;width:360px;height:20px;margin-right:10px;background:url(http://img1.tmon.kr/promotion/bg_bar.png) no-repeat 0 0;line-height:999px}
+.vresult_lst li .box_graph .bg_bar{height:20px;background-position:0 -20px}
+.vresult_lst li .ptxt{display:inline-block;width:70px;margin-right:10px;font-family:verdana;font-size:20px;text-align:right;line-height:20px}
+.vresult_lst li .ptxt em{font-weight:bold;color:#202020}
+.vresult_lst li .numtxt{font-family:dotum;font-size:14px;font-weight:bold;color:#2d2d2f;letter-spacing:-2px;text-align:left}
+
+.tvcf_ct .event2_coming{width:990px;height:180px;margin:0 auto;margin-top:60px;margin-bottom:110px;background:url(http://img1.tmon.kr/promotion/140124_event3_coming.png) no-repeat;text-indent:-9999px}
+.tvcf_ct .btn_scroll_bn{display:block;overflow:hidden;position:fixed;top:167px;left:50%;width:125px;height:120px;margin-left:529px;background:url(http://img1.tmon.kr/promotion/140124_tvcf_scroll.png) no-repeat;text-indent:-900px}

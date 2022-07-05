@@ -1,0 +1,99 @@
+@charset "utf-8";
+
+.prmt_dimm{position:absolute;z-index:100;top:0;left:0;width:100%;height:100%;background-color:#000;opacity:.7;filter:alpha(opacity=70)}
+
+.pntd_wrap{padding:0 !important}
+.pntd_wrap #header{float:none;clear:both;margin:0 auto}
+.pntd_wrap #inner_wrap{left:0;margin-left:0}
+.pntd_wrap #inner_wrap,
+.pntd_wrap #content,
+.pntd_wrap #container{float:none;width:100%}
+
+.pntd2014{width:100%}
+.pntd2014 .prmt_tab{height:80px;background:url(http://img1.tmon.kr/promotion/140414_pntd_tab_bg.jpg) no-repeat 50% 0}
+.pntd2014 .prmt{height:397px;background:#cdc693 url(http://img1.tmon.kr/promotion/140421_pntd_prmt.jpg) no-repeat 50% 0}
+.pntd2014 .prmt2{height:1148px;background:#efe4d4 url(http://img1.tmon.kr/promotion/140421_pntd_prmt2.jpg) no-repeat 50% 0}
+.pntd2014 .prmt3{height:1212px;background:#cfac89 url(http://img2.tmon.kr/promotion/140430_pntd_prmt3.jpg) no-repeat 50% 0}
+.pntd2014 .prmt4{height:1093px;background:#ffd7c7 url(http://img2.tmon.kr/promotion/140418_pntd_prmt4.jpg) no-repeat 50% 0}
+.pntd2014 .prmt5{height:704px;background:#d0dcdb url(http://img2.tmon.kr/promotion/140418_pntd_prmt5.jpg) no-repeat 50% 0}
+.pntd2014 .prmt .inner{width:990px;margin:0 auto}
+.pntd2014 .prmt2 .inner{clear:both;position:relative;width:990px;margin:0 auto}
+.pntd2014 .prmt3 .inner{position:relative;width:990px;margin:0 auto}
+.pntd2014 .prmt4 .inner{position:relative;width:990px;margin:0 auto}
+.pntd2014 .prmt5 .inner{position:relative;width:990px;margin:0 auto}
+.pntd2014 .prmt_tab .inner{position:relative;width:990px;margin:0 auto}
+.pntd2014 .prmt_tab a{display:block;overflow:hidden;position:absolute;top:0;width:307px;height:98px;background:url(http://img1.tmon.kr/promotion/140414_chd_tab.png) no-repeat 0 0;text-indent:-9999px}
+.pntd2014 .prmt_tab .tab_chd{background-position:0 -103px}
+.pntd2014 .prmt_tab .tab_pntd{left:643px;background-position:-307px -103px}
+.pntd2014 .prmt_tab .tab_chd_off{background-position:0 -103px}
+.pntd2014 .prmt .inner .pntd_sale{width:873px;padding:299px 0 0 59px}
+.pntd2014 .prmt .inner .pntd_sale li{float:left}
+.pntd2014 .prmt .inner .pntd_sale li a{display:block;overflow:hidden;width:280px;height:96px;text-indent:-9999px}
+.pntd2014 .prmt .inner .pntd_sale li .btn_sale2{width:310px}
+.pntd2014 .prmt2 .inner .vod_area{position:absolute;top:215px;left:86px;width:816px;height:458px;border:1px solid #fff}
+.pntd2014 .prmt2 .inner .btn_fevent{display:block;overflow:hidden;position:absolute;top:1017px;left:305px;width:374px;height:64px;text-indent:-9999px}
+.pntd2014 .prmt3 .inner .pntd_gift{display:inline-block;overflow:hidden;width:873px;height:183px;margin:199px 0 0 122px;background:url(http://img2.tmon.kr/promotion/140430_gift_lst.png) no-repeat;line-height:900px}
+.pntd2014 .prmt3 .inner .btn_upload{display:block;overflow:hidden;width:374px;height:64px;margin:36px 0 0 308px;text-indent:-9999px}
+.pntd2014 .prmt3 .inner .pntd_photo_area{width:910px;margin:69px 0 0 40px}
+.pntd2014 .prmt3 .inner .pntd_photo_area .btn_myphoto{display:block;overflow:hidden;float:right;width:122px;height:28px;margin:15px 14px 0 0;background:url(http://img1.tmon.kr/promotion/140421_sp_parent.png) no-repeat -102px -74px;text-indent:-9999px}
+.pntd2014 .prmt3 .inner .pntd_photo_area .btn_allphoto{display:block;overflow:hidden;float:right;width:122px;height:28px;margin:15px 14px 0 0;background:url(http://img1.tmon.kr/promotion/140421_sp_parent.png) no-repeat -229px -74px;text-indent:-9999px}
+.pntd2014 .prmt3 .inner .pntd_photo_area .pht_lst{clear:both;padding-top:34px;margin-left:20px}
+.pntd2014 .prmt3 .inner .pntd_photo_area .pht_lst .lst{display:inline-block;width:210px;height:330px;margin-right:5px;text-align:center;cursor:pointer;z-index:10}
+.pntd2014 .prmt3 .inner .pntd_photo_area .pht_lst .lst .photo{display:inline-block;width:208px;height:288px;margin-bottom:11px;border:1px solid #92908c;background:#c4c4c6;text-align:left}
+.pntd2014 .prmt3 .inner .pntd_photo_area .pht_lst .lst > strong{display:inline-block;overflow:hidden;width:170px;height:12px;color:#000;white-space:nowrap}
+.pntd2014 .prmt3 .inner .pntd_photo_area .pht_lst .lst .info{display:inline-block;margin-top:6px;font-size:11px;color:#81807e;white-space:nowrap}
+.pntd2014 .prmt3 .inner .pntd_photo_area .pht_lst .lst .info > em{margin:8px}
+.pntd2014 .prmt3 .inner .pntd_photo_area .paginate{width:100%;margin-top:18px;font-size:13px;font-family:tahoma;text-align:center}
+.pntd2014 .prmt3 .inner .pntd_photo_area .paginate a{display:inline-block;margin-right:-4px;padding:3px 9px;color:#33322b;vertical-align:middle}
+.pntd2014 .prmt3 .inner .pntd_photo_area .paginate .btn_pg{overflow:hidden;width:19px;height:19px;margin:0;padding:0;background:url(http://img1.tmon.kr/promotion/140421_sp_parent.png) no-repeat 0 -74px;line-height:999px;vertical-align:top}
+.pntd2014 .prmt3 .inner .pntd_photo_area .paginate .prev{background-position:-27px -74px}
+.pntd2014 .prmt3 .inner .pntd_photo_area .paginate .next{background-position:-51px -74px}
+.pntd2014 .prmt3 .inner .pntd_photo_area .paginate .next10{background-position:-78px -74px}
+.pntd2014 .prmt3 .inner .pntd_photo_area .paginate > strong{display:inline-block;margin-right:-4px;padding:3px 9px;color:#ff5400;vertical-align:middle}
+.pntd2014 .prmt4 .inner .coupon_area{position:relative;width:990px;margin:0 auto;padding-top:179px;z-index:100}
+.pntd2014 .prmt4 .inner .coupon{overflow:visible;float:left;width:455px;height:426px;margin-left:40px}
+.pntd2014 .prmt4 .inner .ly_superdsc{display:block;overflow:hidden;position:absolute;width:468px;height:338px;background:url(http://img1.tmon.kr/promotion/140414_chd_ly.png) no-repeat;text-indent:-9999px;z-index:30}
+.pntd2014 .prmt4 .inner .coupon .ly_superdsc{top:260px}
+.pntd2014 .prmt4 .inner .coupon.lotte{margin-left:20px}
+.pntd2014 .prmt4 .inner .coupon .more{display:block;overflow:hidden;position:absolute;top:238px;left:407px;width:23px;height:23px;text-indent:-9999px}
+.pntd2014 .prmt4 .inner .coupon .btn_get_coupon{display:block;overflow:hidden;position:absolute;bottom:100px;left:60px;width:415px;height:68px;text-indent:-9999px}
+.pntd2014 .prmt4 .inner .coupon.lotte .btn_get_coupon{left:514px}
+.pntd2014 .prmt4 .inner .coupon span.btn_get_coupon{width:416px;background:url(http://img1.tmon.kr/promotion/140421_sp_parent.png) no-repeat 0 0}
+.pntd2014 .prmt4 .inner .pntd_qna{clear:both;position:relative;width:100%}
+.pntd2014 .prmt4 .inner .pntd_qna .more{display:inline-block;overflow:hidden;position:absolute;top:14px;left:434px;width:81px;height:20px;line-height:999px}
+.pntd2014 .prmt4 .inner .pntd_plan_lst{margin:178px 0 0 62px}
+.pntd2014 .prmt4 .inner .pntd_plan_lst li{float:left}
+.pntd2014 .prmt4 .inner .pntd_plan_lst li a{display:block;overflow:hidden;width:422px;height:60px;margin:0 14px 9px 2px;text-indent:-9999px}
+.pntd2014 .prmt4 .inner .ly_superdsc{top:650px;left:266px}
+.pntd2014 .prmt4 .inner .ly_superdsc .btn_clse{display:block;overflow:hidden;position:absolute;top:22px;left:416px;width:17px;height:17px;text-indent:-9999px}
+.pntd2014 .prmt5 .inner .coupon{position:relative;width:417px;height:325px;padding:186px 0 0 348px}
+.pntd2014 .prmt5 .inner .coupon .more{display:block;overflow:visible;position:absolute;top:240px;right:50px;width:23px;height:23px;text-indent:-9999px}
+.pntd2014 .prmt5 .inner .coupon .btn_get_coupon{display:block;overflow:hidden;position:absolute;top:435px;left:346px;width:415px;height:68px;text-indent:-9999px}
+.pntd2014 .prmt5 .inner .coupon span.btn_get_coupon{width:416px;background:url(http://img1.tmon.kr/promotion/140421_sp_parent.png) no-repeat 0 0}
+.pntd2014 .prmt5 .inner .ly_carddsc{display:block;overflow:hidden;width:678px;height:298px;background:url(http://img1.tmon.kr/promotion/140414_chd_ly2.png) no-repeat;text-indent:-9999px;z-index:10}
+.pntd2014 .prmt5 .inner .coupon .ly_carddsc{top:200px;left:160px}
+.pntd2014 .prmt5 .inner .pntd_qna{clear:both;position:relative;width:100%}
+.pntd2014 .prmt5 .inner .pntd_qna .more{display:inline-block;overflow:hidden;position:absolute;top:86px;left:316px;width:81px;height:20px;line-height:999px}
+.pntd2014 .prmt5 .inner .ly_carddsc{position:absolute;top:400px;left:160px}
+.pntd2014 .prmt5 .inner .ly_carddsc .btn_clse{display:block;overflow:hidden;position:absolute;top:22px;right:34px;width:17px;height:17px;text-indent:-9999px}
+
+/* dimm 처리 레이어 팝업*/
+.pd_ly_upload{position:absolute;z-index:9999;top:50%;left:50%;width:700px;height:599px;margin:0 0 0 -384px;padding-top:60px;background:url(http://img1.tmon.kr/promotion/140421_upload_ly.png) no-repeat}
+.pd_ly_upload .btn_clse{display:block;overflow:hidden;position:absolute;top:30px;right:0px;width:33px;height:33px;text-indent:-9999px}
+.pd_ly_upload fieldset .url_transfer{width:380px;padding:20px 20px 20px 14px;border:0;background:transparent;font-size:13px;font-weight:bold;color:#a0a0a1;letter-spacing:-1px}
+.pd_ly_upload fieldset #userSub{margin:220px 0 0 164px}
+.pd_ly_upload fieldset #userImg{margin:8px 0 0 164px;width:260px;padding-left:14px}
+.pd_ly_upload fieldset .btn_file{display:inline-block;overflow:hidden;margin:-54px 0 0 460px;width:126px;height:53px;background:transparent;line-height:900px}
+.pd_ly_upload .btn_entry{display:block;overflow:hidden;width:219px;height:56px;margin:56px 0 0 228px;text-indent:-9999px}
+.pntd_ly_userview{position:absolute;z-index:9999;top:50%;left:50%;width:796px;height:599px;margin:-317px 0 0 -384px;padding-top:60px;background:url(http://img2.tmon.kr/promotion/140418_photo_ly2.png) no-repeat}
+.pntd_ly_userview a{display:block;overflow:hidden;position:absolute;text-indent:-9999px}
+.pntd_ly_userview .btn_clse{top:30px;right:35px;width:33px;height:33px}
+.pntd_ly_userview .ly_img{overflow-y:scroll;overflow-x:hidden;display:inline-block;position:absolute;top:23px;left:23px;width:390px;height:593px;background:#c4c4c6}
+.pntd_ly_userview > strong{overflow:hidden;position:absolute;top:320px;right:100px;width:280px;height:18px;font-size:18px;letter-spacing:-1px;text-align:center}
+.pntd_ly_userview span{display:inline-block;position:absolute;font-weight:bold}
+.pntd_ly_userview .date{bottom:270px;right:200px}
+.pntd_ly_userview .user{bottom:250px;right:205px}
+.pntd_ly_userview .btn_okay{bottom:91px;right:193px;width:80px;height:32px}
+.pntd_ly_userview .btn_delete{bottom:91px;right:151px;width:80px;height:32px}
+.pntd_ly_user2{background:url(http://img2.tmon.kr/promotion/140418_photo_ly2_2.png) no-repeat}
+.pntd_ly_user2 .btn_okay{right:237px}
