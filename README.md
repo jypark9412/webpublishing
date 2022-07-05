@@ -26,5 +26,7 @@
 - tool: photoshop/editplus
 -HTML/CSS/JAVASCRIPT/JQUERY
 
-### 포트폴리오 확인 시
+### 포트폴리오 확인 관련 내용 공유
 - 롯데면세점 HTML 파일 경우 [이벤트 디자인팀] 혹은 [evWrap]로 검색 후 소스부터 리뷰 바랍니다.
+- 뉴스픽 파트너스 메인 페이지 제작
+ - 유저랭킹/네이게이션 JS 롤링 이벤트 사용
