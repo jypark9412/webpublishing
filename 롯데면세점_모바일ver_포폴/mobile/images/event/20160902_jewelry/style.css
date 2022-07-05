@@ -1,0 +1,122 @@
+.evWrap {position:relative; width:100%;}
+.evWrap .c_img {width:100%;}
+.evWrap .hide{position:absolute;left:1px;top:1px;width:1px;height:1px;visibility:hidden;}
+
+.evWrap .event_zone{position:relative;width:100%;height:889px;background:url("http://image.lottedfs.com/static-root/mobile/images/event/20160902_jewelry/bg.jpg") no-repeat;background-size:100% 889px}
+.evWrap .event_zone .jewerly_cont{position:relative;width:320px;margin:0 auto}
+.evWrap .event_zone .jewerly_cont .title{position:absolute;top:0px;z-index:100}
+.evWrap .jewerly_cont .login_zone{width:174px;height:114px;position:absolute;top:746px;right:43px;z-index:1000}
+.evWrap .jewerly_cont .login_zone .login_before{position:relative;width:174px;height:134px;background:url("http://image.lottedfs.com/static-root/mobile/images/event/20160902_jewelry/login_before.png") no-repeat;background-size:174px 134px}
+.evWrap .jewerly_cont .login_zone .login_before .btn_login{display:block;overflow:hidden;position:absolute;left:36px;top:80px;width:100px;height:29px;text-indent:-9999px}
+.evWrap .jewerly_cont .login_zone .login_after{position:relative;width:174px;height:134px;background:url("http://image.lottedfs.com/static-root/mobile/images/event/20160902_jewelry/login_after.png") no-repeat;background-size:174px 134px}
+
+.evWrap .items_cont{position:relative;}
+.evWrap .items_cont .items li{display:block;position:absolute}
+.evWrap .items_cont .items li span{display:block;position:absolute;}
+.evWrap .items_cont .items li.item_01{left:53px;top:302px}
+.evWrap .items_cont .items li.item_01 img{width:87px;height:74px}
+.evWrap .items_cont .items li.item_01 .bg{width:104px;height:45px;left:-18px;top:35px;background:url("http://image.lottedfs.com/static-root/mobile/images/event/20160902_jewelry/bg_01.png") no-repeat;background-size:104px 45px}
+.evWrap .items_cont .items li.item_02{right:37px;top:394px}
+.evWrap .items_cont .items li.item_02 img{width:117px;height:76px}
+.evWrap .items_cont .items li.item_02 .bg{width:137px;height:55px;right:-12px;top:28px;background:url("http://image.lottedfs.com/static-root/mobile/images/event/20160902_jewelry/bg_02.png") no-repeat;background-size:137px 55px}
+.evWrap .items_cont .items li.item_03{left:40px;top:416px}
+.evWrap .items_cont .items li.item_03 img{width:136px;height:139px}
+.evWrap .items_cont .items li.item_03 .bg{width:199px;height:135px;left:-34px;top:29px;background:url("http://image.lottedfs.com/static-root/mobile/images/event/20160902_jewelry/bg_03.png") no-repeat;background-size:199px 135px}
+.evWrap .items_cont .items li.item_04{left:10px;top:548px}
+.evWrap .items_cont .items li.item_04 img{width:108px;height:87px}
+.evWrap .items_cont .items li.item_04 .bg{width:141px;height:95px;left:0px;top:14px;background:url("http://image.lottedfs.com/static-root/mobile/images/event/20160902_jewelry/bg_04.png") no-repeat;background-size:141px 95px}
+.evWrap .items_cont .items li.item_05{right:28px;top:543px}
+.evWrap .items_cont .items li.item_05 img{width:133px;height:137px}
+.evWrap .items_cont .items li.item_05 .bg{width:226px;height:166px;right:-28px;top:4px;background:url("http://image.lottedfs.com/static-root/mobile/images/event/20160902_jewelry/bg_05.png") no-repeat;background-size:226px 166px}
+
+.evWrap .jewerly_zone .item_select{width:320px;height:373px;padding-top:293px}
+.evWrap .jewerly_zone .item_select .img_prd{position:relative;width:320px;height:373px;z-index:30}
+
+.evWrap .event_zone .prize_popup{position:fixed;width:100%;height:1530px;top:0;left:0;z-index:3000}
+.evWrap .event_zone .prize_popup .bg_popup{position:absolute;top:0;left:0;width:100%;height:1530px;background-color:#000;opacity:0.7;z-index:10000}
+.evWrap .event_zone .prize_popup .giftPop{width:100%;position:absolute;top:0;left:0;z-index:10000}
+.evWrap .event_zone .giftPop img{width:100%;height:507px;}
+.evWrap .event_zone .popZone{position:relative;width:320px;margin: 0 auto}
+.evWrap .event_zone .popup_zero img{width:100%;height:507px;}
+.evWrap .event_zone .prize_popup .btn_pclose{display:block;overflow:hidden;width:33px;height:33px;position:absolute;right:22px;top:224px;background:url("http://image.lottedfs.com/static-root/mobile/images/event/20160902_jewelry/pop_close.png") no-repeat;background-size:33px 33px;text-indent:-9999px}
+.evWrap .prize_popup .popup_zero .btn_pclose{display:block;overflow:hidden;width:33px;height:33px;position:absolute;right:22px;top:224px;background:url("http://image.lottedfs.com/static-root/mobile/images/event/20160902_jewelry/pop_close.png") no-repeat;background-size:33px 33px;text-indent:-9999px}
+
+.evWrap .result_cont{overflow:hidden;position:relative;height:517px;background:url("http://image.lottedfs.com/static-root/mobile/images/event/20160902_jewelry/bg_result_2.jpg") repeat-x;background-size:auto 517px}
+.evWrap .result_zone{width:320px;height:517px;margin:0 auto;background:url("http://image.lottedfs.com/static-root/mobile/images/event/20160902_jewelry/bg_result.jpg") no-repeat;background-size:320px 517px}
+.evWrap .result_zone .result{padding:71px 0 0 18px}
+.evWrap .result_zone .result li{float:left;width:85px;height:92px;margin:0px 15px 0 0;text-indent:-9999px}
+.evWrap .result_zone .result li.four{margin:34px 0 0 47px}
+.evWrap .result_zone .result li.five{margin:34px 0 0 22px}
+.evWrap .result_cont .result li.wait{background:url("http://image.lottedfs.com/static-root/mobile/images/event/20160902_jewelry/waiting.png") no-repeat;background-size:85px 92px}
+.evWrap .result_cont .result li.zero{background:url("http://image.lottedfs.com/static-root/mobile/images/event/20160902_jewelry/zero.png") no-repeat;background-size:85px 92px}
+.evWrap .result_cont .result li.save_100{background:url("http://image.lottedfs.com/static-root/mobile/images/event/20160902_jewelry/save_100.png") no-repeat;background-size:85px 92px}
+.evWrap .result_cont .result li.save_200_1{background:url("http://image.lottedfs.com/static-root/mobile/images/event/20160902_jewelry/save_200.png") no-repeat;background-size:85px 92px}
+.evWrap .result_cont .result li.save_200_2{background:url("http://image.lottedfs.com/static-root/mobile/images/event/20160902_jewelry/save_200_dia.png") no-repeat;background-size:85px 92px}
+.evWrap .result_cont .result li.save_500{background:url("http://image.lottedfs.com/static-root/mobile/images/event/20160902_jewelry/save_500.png") no-repeat;background-size:85px 92px}
+
+.evWrap .deco_bear .soup{width:64px;height:176px;position:absolute;left:0px;top:618px;background:url("http://image.lottedfs.com/static-root/mobile/images/event/20160902_jewelry/hand.png") no-repeat;z-index:500;background-size:64px 176px}
+.evWrap .deco_bear .body{width:141px;height:141px;position:absolute;left:6px;top:635px;background:url("http://image.lottedfs.com/static-root/mobile/images/event/20160902_jewelry/bear.png") no-repeat;z-index:100;background-size:141px 141px}
+
+.evWrap .deco_rabbit{width:90px;height:194px;position:absolute;right:0px;top:677px;z-index:2000}
+.evWrap .deco_rabbit .txt{width:73px;height:64px;background:url("http://image.lottedfs.com/static-root/mobile/images/event/20160902_jewelry/txt.png") no-repeat;background-size:73px 64px}
+.evWrap .deco_rabbit .rabbit{width:90px;height:139px;background:url("http://image.lottedfs.com/static-root/mobile/images/event/20160902_jewelry/rabbit.png") no-repeat;background-size:90px 139px}
+
+/* 선물상자 모션 */
+@keyframes moving {
+	0%{
+		transform: translateY(0px) translateX(-2px) rotate(0);
+	}
+	25%{
+		transform: translateY(0px) translateX(0px) rotate(0);
+	}
+	50%{
+		transform: translateY(0px) translateX(-2px) rotate(0);
+	}
+	75%{
+		transform: translateY(0px) translateX(0px) rotate(0);
+	}
+	100%{
+		transform: translateY(0px) translateX(-2px) rotate(0);
+	}
+}
+@-webkit-keyframes moving {
+	0%{
+		transform: translateY(0px) translateX(-2px) rotate(0);
+	}
+	25%{
+		transform: translateY(0px) translateX(0px) rotate(0);
+	}
+	50%{
+		transform: translateY(0px) translateX(0px) rotate(0);
+	}
+	75%{
+		transform: translateY(0px) translateX(0px) rotate(0);
+	}
+	100%{
+		transform: translateY(0px) translateX(-2px) rotate(0);
+	}
+}
+
+/* 선물상자 모션 */
+@keyframes moving2 {
+	0%{
+		transform: translateY(0px) translateX(-3px) rotate(0);
+	}
+	50%{
+		transform: translateY(0px) translateX(0px) rotate(0);
+	}
+	100%{
+		transform: translateY(0px) translateX(-3px) rotate(0);
+	}
+}
+@-webkit-keyframes moving2 {
+	0%{
+		transform: translateY(0px) translateX(-3px) rotate(0);
+	}
+	50%{
+		transform: translateY(0px) translateX(0px) rotate(0);
+	}
+	100%{
+		transform: translateY(0px) translateX(-3px) rotate(0);
+	}
+}
