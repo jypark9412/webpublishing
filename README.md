@@ -24,7 +24,7 @@
 - 롯데인터넷면세점(소공점/부산점) 국문페이지 사이트(web/mobile) 유지보수 및 운영
 - 롯데인터넷면세점 국문 DM 제작/발송
 - tool: photoshop/editplus
--HTML/CSS/JAVASCRIPT/JQUERY
+- HTML/CSS/JAVASCRIPT/JQUERY
 
 ### 포트폴리오 확인 관련 내용 공유
 - 롯데면세점 HTML 파일 경우 [이벤트 디자인팀] 혹은 [evWrap]로 검색 후 소스부터 리뷰 바랍니다.
