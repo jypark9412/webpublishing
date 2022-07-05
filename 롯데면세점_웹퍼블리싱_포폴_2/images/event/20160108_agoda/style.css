@@ -1,0 +1,82 @@
+.evWrap {position:relative;width:896px;font-size:12px;}
+.evWrap .hide {position:absolute;left:1px;top:1px;width:1px;height:1px;visibility:hidden;}
+.evWrap .block {display:block; vertical-align:baseline;}
+.evWrap img {vertical-align:top;}
+.evWrap ul{list-style: none;}
+
+.evWrap .agoda_content{position:relative;font-family:"Nanum Gothic", sans-serif;}
+.evWrap .tab_agoda{width:896px}
+.evWrap .tab_agoda .btn_tab{display:block;overflow:hidden;width:896px;height:108px;position:absolute;top:11px;text-decoration:none}
+.evWrap .tab_agoda .btn_tab .ht_cnt{display:inline-block;position:absolute;right:7px;top:25px;width:27px;height:29px;background:url("bg_tab_cnt.png") no-repeat;font-family:"Helvetica", sans-serif;color:#fff;font-size:22px;text-align:center;line-height:27px}
+.evWrap .tab_agoda .btn_tab.tab_01{left:0px}
+.evWrap .tab_agoda .btn_tab.tab_02{width:118px;left:153px;background-position:-153px 0}
+.evWrap .tab_agoda .btn_tab.tab_03{width:123px;left:271px;background-position:-271px 0}
+.evWrap .tab_agoda .btn_tab.tab_04{width:193px;left:394px;background-position:-394px 0}
+.evWrap .tab_agoda .btn_tab.tab_05{width:177px;left:587px;background-position:-587px 0}
+.evWrap .tab_agoda .btn_tab.tab_06{width:132px;left:764px;background-position:-764px 0}
+
+.evWrap .tab_agoda .btn_tab.tab_01.on{width:153px;background-position:0 -118px}
+.evWrap .tab_agoda .btn_tab.tab_02.on{width:118px;background-position:-153px -118px}
+.evWrap .tab_agoda .btn_tab.tab_03.on{width:123px;background-position:-271px -118px}
+.evWrap .tab_agoda .btn_tab.tab_04.on{width:193px;background-position:-394px -118px}
+.evWrap .tab_agoda .btn_tab.tab_05.on{width:177px;background-position:-587px -118px}
+.evWrap .tab_agoda .btn_tab.tab_06.on{width:132px;background-position:-764px -118px}
+.evWrap .tab_agoda .tab_cont{padding:120px 0 40px 0}
+
+.evWrap .tab_agoda #agoda_tab1 {display:block}
+.evWrap .tab_agoda #agoda_tab2 {display:none}
+.evWrap .tab_agoda #agoda_tab3 {display:none}
+.evWrap .tab_agoda #agoda_tab4 {display:none}
+.evWrap .tab_agoda #agoda_tab5 {display:none}
+.evWrap .tab_agoda #agoda_tab6 {display:none}
+
+.evWrap .tab_agoda .lst_area{margin-bottom:22px}
+.evWrap .tab_agoda .lst_hoterSelect{position:relative;overflow:hidden;width:900px;padding:14px 0 0 18px;font-family:"Dotum";color:#333;font-weight:bold}
+.evWrap .tab_agoda .agoda_lst1{background:url("bg_bottom_01.png") no-repeat;background-position:center bottom;}
+.evWrap .tab_agoda .agoda_lst2{background:url("bg_bottom_02.png") no-repeat;background-position:center bottom;}
+.evWrap .tab_agoda .agoda_lst3{background:url("bg_bottom_03.png") no-repeat;background-position:center bottom;}
+.evWrap .tab_agoda .agoda_lst4{background:url("bg_bottom_04.png") no-repeat;background-position:center bottom;}
+.evWrap .tab_agoda .agoda_lst5{background:url("bg_bottom_05.png") no-repeat;background-position:center bottom;}
+.evWrap .tab_agoda .agoda_lst6{background:url("bg_bottom_06.png") no-repeat;background-position:center bottom;}
+.evWrap .tab_agoda .lst_twoHotel{margin-left:168px}
+.evWrap .tab_agoda .lst_hoterSelect li{width:261px;float:left;margin:0 39px 38px 0;text-align:center}
+.evWrap .tab_agoda .lst_hoterSelect .lst_thumb{display:block;margin-bottom:8px}
+.evWrap .tab_agoda .lst_hoterSelect .select_cnt{}
+.evWrap .tab_agoda .lst_hoterSelect .select_cnt .cnt{color:#e42141}
+.evWrap .tab_agoda .lst_hoterSelect .btn_select{display:block;width:101px;height:26px;margin:8px auto;background-color:#222;color:#fff;line-height:26px;text-decoration:none}
+.evWrap .tab_agoda .agoda_lst1 .btn_select.on{background-color:#17b744}
+.evWrap .tab_agoda .agoda_lst2 .btn_select.on{background-color:#9e171f}
+.evWrap .tab_agoda .agoda_lst3 .btn_select.on{background-color:#7e17bd}
+.evWrap .tab_agoda .agoda_lst4 .btn_select.on{background-color:#234abe}
+.evWrap .tab_agoda .agoda_lst5 .btn_select.on{background-color:#c04403}
+.evWrap .tab_agoda .agoda_lst6 .btn_select.on{background-color:#17a896}
+.evWrap .tab_agoda .lst_hoterSelect .btn_select.off{background-color:#f1f1f1;color:#aaa}
+
+/* 호텔 바우처 내용 확인 CSS */
+.evWrap .lst_hotelInfo{width:815px;margin-left:10px}
+.evWrap .lst_hotel{overflow:hidden;width:815px;margin:18px 0 0 38px;padding-bottom:30px;border-bottom:1px solid #dadada}
+.evWrap .lst_hotel.hotel_right .info_hotel{float:left;margin-left:0}
+.evWrap .lst_hotel.hotel_right .thumb_hotel{float:right}
+.evWrap .lst_hotel .thumb_hotel{position:relative;float:left;width:404px;height:315px}
+.evWrap .lst_hotel .thumb_hotel .thumb{width:404px;height:315px}
+.evWrap .lst_hotel .btn_info{position:absolute;right:0;bottom:0}
+.evWrap .lst_hotel .info_hotel{float:left;width:310px;margin-left:39px;color:#333}
+.evWrap .lst_hotel .info_hotel strong{font-family:"Verdana";font-size:25px;line-height:25px;color:#333;letter-spacing:-1px}
+.evWrap .lst_hotel .info_hotel .txt_color{line-height:14px;margin:2px 0;color:#da3232;letter-spacing:-1px}
+.evWrap .lst_hotel .info_hotel .txt_cmt{display:block;margin-left:89px}
+.evWrap .lst_hotel .info_hotel .txt_cmt2{display:block;margin-left:14px}
+.evWrap .lst_hotel .info_hotel .lst_info{margin-top:16px}
+.evWrap .lst_hotel .note{margin-top:10px}
+.evWrap .lst_hotel .note .tit_bold{font-weight:bold}
+.evWrap .lst_hotel.last{border:none}
+
+/*팝업*/
+.benefit_pop{position:relative;width:486px;height:512px;background-color:#edf6ff}
+.benefit_pop .pop_tit{margin:11px 0 17px 20px}
+.benefit_pop .pop_cont .pop_info{width:406px;margin:0 auto;padding:21px 20px;font-size:11px;line-height:14px;background-color:#fff;color:#5d5d5d;border:1px solid #acadae;letter-spacing:-1px}
+.benefit_pop .pop_cont .pop_info .color{color:#c50d31}
+.benefit_pop .agreeBox{margin:10px 0 6px 20px;color:#333}
+.benefit_pop .agreeBox .l_txt{font-weight:bold}
+.benefit_pop .agreeBox label{line-height:12px;vertical-align:middle}
+.benefit_pop .pop_btn{width:330px;margin:14px auto 0 auto;}
+.benefit_pop .btn_enter{margin-right:9px}
