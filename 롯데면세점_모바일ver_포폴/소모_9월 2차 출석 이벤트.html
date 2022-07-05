@@ -1,0 +1,1208 @@
+
+
+
+
+<!--  
+카테고리 번호 : 20012000030000700010
+카테고리 이름 : 모바일 시크릿 적립금 3,000원 증정
+이벤트 시작일자(YYYYMMDD) : 20140701
+이벤트 종료일자(YYYYMMDD) : 20140731
+이벤트 시작일자(YYYYMMDDHH24MISS) : 20140701000000
+이벤트 종료일자(YYYYMMDDHH24MISS) : 20140731235959
+구매 시작일자(YYYYMMDD) : 
+구매 종료일자(YYYYMMDD) : 
+구매 시작일자(YYYYMMDDHH24MISS) : 
+구매 종료일자(YYYYMMDDHH24MISS) : 
+
+-->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:og="http://opengraphprotocol.org/schema/">
+<head>
+<meta property="og:title" content="모바일 시크릿 적립금" />
+<meta property="og:description" content="모바일 시크릿 적립금" /> 
+<meta property="og:image" content="http://image.lottedfs.com/static-root/mobile/img/lottedfs_icon.png" />
+<meta http-equiv="Content-Type" content="text/html; charset=euc-kr" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, target-densitydpi=medium-dpi" />
+<title>main</title>
+<link rel="stylesheet" type="text/css" href="http://image.lottedfs.com/static-root/mobile/css/mwah/style.css"/>
+<link rel="stylesheet" type="text/css" href="http://image.lottedfs.com/static-root/mobile/css/mwah/mobile_new.css"/>
+<script src="http://image.lottedfs.com/static-root/mobile/js/script.js"></script>
+
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+<script type="text/javascript">
+	//<![CDATA[
+	!window.jQuery && document.write('<script src="http://image.lottedfs.com/static-root/mobile/js/jquery-1.7.2.min.js"><\/script>');
+	//]]>
+	function callProductList(cate,cate_name,depth){
+		location.href='http://m.lottedfs.com/handler/Category-ProductListNew?categoryId='+encodeURIComponent(cate)+'&product_name='+encodeURIComponent(cate_name)+'&depth='+encodeURIComponent(depth);
+	};
+</script>
+
+<script src=".static-root/mobile/js/swipe.js"></script>
+<script src=".static-root/mobile/js/mobile_new.js"></script>
+
+<script language="javascript">		
+function EventGo() 
+{
+	
+	var ReserveYN    	= "N"
+	var frm 			= document.actFrm;   
+	var nowDate 		= "20140708090935"; 
+	var grd_cd 			= "";
+
+	if(nowDate < '20140701000000'){  
+		alert("이벤트 기간이 아닙니다.  ");
+		return;   
+	}  
+
+	if(nowDate > '20140731235959'){  
+		alert("이벤트 기간이 종료되었습니다.  ");
+		return;  
+	}               
+
+	if(isLogin == "false") {
+		var returnurl = X2UrlBS + '/EventMobileOnlyPoint-Start';
+        goMLogin(returnurl);   
+	   	return; 
+	}    
+
+	if(ReserveYN == "Y"){
+		alert("이미 적립금을 발급 받았습니다.  ");
+		return;  
+	}
+
+	if(frm.downClick.value == "N"){			 
+		frm.downClick.value   	= "Y";		 
+		frm.action = "http://m.lottedfs.com/handler/EventMobileOnlyPoint-CbpAction";
+	 	frm.target = 'saveFrame'; 
+		frm.submit();  
+	}
+
+}  
+
+function Reset(){		   
+	var frm = document.actFrm;  			
+	frm.downClick.value = "N";
+} 
+
+function MainReload(){
+	location.href = "http://m.lottedfs.com/handler/EventMobileOnlyPoint-Start";		
+} 
+
+function goPrev() {
+	document.location.href = X2UrlBS + '/Event-AllEventList';
+}
+</script>  
+</head>
+
+<body>
+<div id="wrap">
+	<div class="wrap-inner">
+  <!-- top -->
+  
+
+
+		<!-- :::::::::::::::::::::::::::::::::::::::::::::::::::::: 공통 - TOP :::::::::::::::::::::::::::::::::::::::::::::::::::::: -->
+<!-- top_new -->		
+
+<link rel="stylesheet" type="text/css" href="http://image.lottedfs.com/static-root/mobile/css/mwah/m_renewal2.css"/>
+
+<script type="text/javascript">
+
+</script>	
+
+<script type="text/javascript">
+ //<![CDATA[
+        function seearchClick(query) {
+			location.href="http://m.lottedfs.com/handler/Search?query="+encodeURI(query);
+        }
+        
+        function goSearchEngineEnter() {
+        	if(document.getElementById('query').value == ""){
+				alert('검색어를 입력해 주세요');
+				return false;
+			}
+        	
+        	var frm = document.topsearch;
+	
+				// 특정 검색어 URL 연결
+				if ("KB 국민카드" == frm.query.value) {
+					urlTemp = "http://m.lottedfs.com/handler/EventKBCard2thSecretCbp-Start?categoryid=20012000030000600023";
+	
+					if (urlTemp.indexOf("Search") > 0) {
+			            if(replaceAll(document.getElementById('query').value) != ""){
+							frm.query.value = urlTemp.substring(urlTemp.indexOf("query=") + 6, urlTemp.length);
+							frm.requery.value = frm.query.value;
+						}else{
+			            	frm.action = "http://m.lottedfs.com/handler/Search-NoQuery";
+						}
+					} else {
+						frm.action = "http://m.lottedfs.com/handler/EventKBCard2thSecretCbp-Start?categoryid=20012000030000600023";
+					}
+				}
+	
+				// 특정 검색어 URL 연결
+				if ("g마켓" == frm.query.value) {
+					urlTemp = "http://m.lottedfs.com/handler/EventGmarketTour-Start?categoryId=20012000020000600016";
+	
+					if (urlTemp.indexOf("Search") > 0) {
+			            if(replaceAll(document.getElementById('query').value) != ""){
+							frm.query.value = urlTemp.substring(urlTemp.indexOf("query=") + 6, urlTemp.length);
+							frm.requery.value = frm.query.value;
+						}else{
+			            	frm.action = "http://m.lottedfs.com/handler/Search-NoQuery";
+						}
+					} else {
+						frm.action = "http://m.lottedfs.com/handler/EventGmarketTour-Start?categoryId=20012000020000600016";
+					}
+				}
+	
+				// 특정 검색어 URL 연결
+				if ("kb국민카드" == frm.query.value) {
+					urlTemp = "http://m.lottedfs.com/handler/EventKBCard2thSecretCbp-Start?categoryid=20012000030000600023";
+	
+					if (urlTemp.indexOf("Search") > 0) {
+			            if(replaceAll(document.getElementById('query').value) != ""){
+							frm.query.value = urlTemp.substring(urlTemp.indexOf("query=") + 6, urlTemp.length);
+							frm.requery.value = frm.query.value;
+						}else{
+			            	frm.action = "http://m.lottedfs.com/handler/Search-NoQuery";
+						}
+					} else {
+						frm.action = "http://m.lottedfs.com/handler/EventKBCard2thSecretCbp-Start?categoryid=20012000030000600023";
+					}
+				}
+	
+				// 특정 검색어 URL 연결
+				if ("론리 플래닛" == frm.query.value) {
+					urlTemp = "http://m.lottedfs.com/lonelyplanet.html";
+	
+					if (urlTemp.indexOf("Search") > 0) {
+			            if(replaceAll(document.getElementById('query').value) != ""){
+							frm.query.value = urlTemp.substring(urlTemp.indexOf("query=") + 6, urlTemp.length);
+							frm.requery.value = frm.query.value;
+						}else{
+			            	frm.action = "http://m.lottedfs.com/handler/Search-NoQuery";
+						}
+					} else {
+						frm.action = "http://m.lottedfs.com/lonelyplanet.html";
+					}
+				}
+	
+				// 특정 검색어 URL 연결
+				if ("KB국민카드" == frm.query.value) {
+					urlTemp = "http://m.lottedfs.com/handler/EventKBCard2thSecretCbp-Start?categoryid=20012000030000600023";
+	
+					if (urlTemp.indexOf("Search") > 0) {
+			            if(replaceAll(document.getElementById('query').value) != ""){
+							frm.query.value = urlTemp.substring(urlTemp.indexOf("query=") + 6, urlTemp.length);
+							frm.requery.value = frm.query.value;
+						}else{
+			            	frm.action = "http://m.lottedfs.com/handler/Search-NoQuery";
+						}
+					} else {
+						frm.action = "http://m.lottedfs.com/handler/EventKBCard2thSecretCbp-Start?categoryid=20012000030000600023";
+					}
+				}
+	
+				// 특정 검색어 URL 연결
+				if ("지마켓" == frm.query.value) {
+					urlTemp = "http://m.lottedfs.com/handler/EventGmarketTour-Start?categoryId=20012000020000600016";
+	
+					if (urlTemp.indexOf("Search") > 0) {
+			            if(replaceAll(document.getElementById('query').value) != ""){
+							frm.query.value = urlTemp.substring(urlTemp.indexOf("query=") + 6, urlTemp.length);
+							frm.requery.value = frm.query.value;
+						}else{
+			            	frm.action = "http://m.lottedfs.com/handler/Search-NoQuery";
+						}
+					} else {
+						frm.action = "http://m.lottedfs.com/handler/EventGmarketTour-Start?categoryId=20012000020000600016";
+					}
+				}
+	
+				// 특정 검색어 URL 연결
+				if ("온라인투어" == frm.query.value) {
+					urlTemp = "http://m.lottedfs.com/handler/EventOnlineTour-Start?CHANNEL_CD=100200270001";
+	
+					if (urlTemp.indexOf("Search") > 0) {
+			            if(replaceAll(document.getElementById('query').value) != ""){
+							frm.query.value = urlTemp.substring(urlTemp.indexOf("query=") + 6, urlTemp.length);
+							frm.requery.value = frm.query.value;
+						}else{
+			            	frm.action = "http://m.lottedfs.com/handler/Search-NoQuery";
+						}
+					} else {
+						frm.action = "http://m.lottedfs.com/handler/EventOnlineTour-Start?CHANNEL_CD=100200270001";
+					}
+				}
+	
+				// 특정 검색어 URL 연결
+				if ("G마켓" == frm.query.value) {
+					urlTemp = "http://m.lottedfs.com/handler/EventGmarketTour-Start?categoryId=20012000020000600016";
+	
+					if (urlTemp.indexOf("Search") > 0) {
+			            if(replaceAll(document.getElementById('query').value) != ""){
+							frm.query.value = urlTemp.substring(urlTemp.indexOf("query=") + 6, urlTemp.length);
+							frm.requery.value = frm.query.value;
+						}else{
+			            	frm.action = "http://m.lottedfs.com/handler/Search-NoQuery";
+						}
+					} else {
+						frm.action = "http://m.lottedfs.com/handler/EventGmarketTour-Start?categoryId=20012000020000600016";
+					}
+				}
+	
+				// 특정 검색어 URL 연결
+				if ("kb 국민카드" == frm.query.value) {
+					urlTemp = "http://m.lottedfs.com/handler/EventKBCard2thSecretCbp-Start?categoryid=20012000030000600023";
+	
+					if (urlTemp.indexOf("Search") > 0) {
+			            if(replaceAll(document.getElementById('query').value) != ""){
+							frm.query.value = urlTemp.substring(urlTemp.indexOf("query=") + 6, urlTemp.length);
+							frm.requery.value = frm.query.value;
+						}else{
+			            	frm.action = "http://m.lottedfs.com/handler/Search-NoQuery";
+						}
+					} else {
+						frm.action = "http://m.lottedfs.com/handler/EventKBCard2thSecretCbp-Start?categoryid=20012000030000600023";
+					}
+				}
+	
+				// 특정 검색어 URL 연결
+				if ("론리플래닛" == frm.query.value) {
+					urlTemp = "http://m.lottedfs.com/lonelyplanet.html";
+	
+					if (urlTemp.indexOf("Search") > 0) {
+			            if(replaceAll(document.getElementById('query').value) != ""){
+							frm.query.value = urlTemp.substring(urlTemp.indexOf("query=") + 6, urlTemp.length);
+							frm.requery.value = frm.query.value;
+						}else{
+			            	frm.action = "http://m.lottedfs.com/handler/Search-NoQuery";
+						}
+					} else {
+						frm.action = "http://m.lottedfs.com/lonelyplanet.html";
+					}
+				}
+	
+		var rq = document.getElementById('query').value; 
+	        if(replaceAll(rq) != ""){
+	        	rq = rq.replace(/&/gi, "&amp;");
+	        	rq = rq.replace(/</gi, "&lt;");
+	        	rq = rq.replace(/>/gi, "&gt;");
+	        	rq = rq.replace(/'/gi, "&#39;");
+	        	rq = rq.replace(/"/gi, "&quot;");
+	        	rq = rq.replace(/%/gi, "&#37;");
+	        	rq = rq.replace(/	/gi, "&#09;");
+	        	document.getElementById('hiddenQuery').value = rq;
+				frm.submit();
+			}else{
+	          	frm.action = "http://m.lottedfs.com/handler/Search-NoQuery";
+				frm.submit();
+			}
+        }
+        function replaceAll(str) {
+        	while(str.indexOf("!") != -1){
+         	   str = str.replace("!","");
+            }
+        	while(str.indexOf("#") != -1){
+         	   str = str.replace("#","");
+            }
+        	while(str.indexOf("$") != -1){
+         	   str = str.replace("$","");
+            }
+        	while(str.indexOf("%") != -1){
+         	   str = str.replace("%","");
+            }
+        	while(str.indexOf("&") != -1){
+          	   str = str.replace("&","");
+             }
+        	while(str.indexOf("?") != -1){
+          	   str = str.replace("?","");
+             }
+        	while(str.indexOf("/") != -1){
+          	   str = str.replace("/","");
+             }
+        	while(str.indexOf("<") != -1){
+          	   str = str.replace("<","");
+             }
+        	while(str.indexOf(">") != -1){
+          	   str = str.replace(">","");
+             }
+           return str;
+        }
+        
+	/* function searchOnFocus() {
+		var frm = document.topsearch;
+
+		if (frm.query.defaultValue == frm.query.value) {
+			frm.query.value="";
+		}
+	}
+
+	function searchOnblur() {
+		var frm = document.topsearch;
+
+        if(frm.query.value == "" || frm.query.value.search(/[^\s]/g) < 0) {
+        	frm.query.value = frm.query.defaultValue;
+        }
+	} */
+	//]]>
+</script>
+<script type="text/javascript">
+var ios_result = "00|00|00|00";
+var bw_cnt = "0|0"
+
+function androidToken(custId,sexInfo,receive,departDate){
+	var result = custId+","+sexInfo+","+receive+","+departDate;
+	window.androidbridge.devicePushToken(result);
+}
+function androidBWCnt(basket_cnt,wish_cnt){
+	var result1 = basket_cnt+","+wish_cnt;
+	window.androidbridge.BWCnt(result1);
+}
+
+/* function hideSns(){
+	$(".sns-share").hide();
+}
+function showSns(){
+	$(".sns-share").show();
+}
+ */
+function goCredit(){
+	 window.open("Event-Detail?categoryId=10085100020000100006&POP_CARD=Y");
+}
+
+function mainFlickNum(f_num){
+	var gu = "http://m.lottedfs.com/handler/Index";
+	
+	setCookie("flickCookie", f_num, 1);
+	if(location.href != gu && location.href != gu+"-Start"){
+		location.href= gu;
+	}
+}
+function setCookie( cookieName, cookieValue, expireDate ){
+	var today = new Date();
+	today.setDate( today.getDate() + parseInt( expireDate ) );
+	document.cookie = cookieName + "=" + escape( cookieValue ) + "; path=/; expires=" + today.toGMTString() + ";";
+}
+
+function goURL(){
+	setCookie("flickCookie", "", -1);
+	setCookie("flickCookie", 0, 1);
+	location.href="http://m.lottedfs.com/handler/Index-Start";
+}
+function closeSearchbox(){
+	close_search_layer();
+}
+function goCategory(){
+	location.href = "http://m.lottedfs.com/handler/Category-MainList";
+}
+</script>
+
+ 
+<script type="text/javascript" src="http://m.lottedfs.com/handler/Index-SetConfig?categoryId=20012000030000700010&RealviewCategoryId="></script>
+ 
+<script type="text/javascript" src="http://image.lottedfs.com/static-root/mobile/js/UICommon.js"></script>
+		
+
+		<div id="header">
+			<h1><a href="javascript:goURL();">롯데인터넷면세점</a></h1>
+
+			<a class="icon btn-category open-lside" onclick="goCategory();">카테고리</a>
+			<a class="icon btn-menu open-rside" href="#rside">통합메뉴</a>
+
+ 			<form name="topsearch"  id="topsearch" method="post" action="http://m.lottedfs.com/handler/Search">
+				<div class="search-input">
+					<span class="keyword-input"><input type="search" maxlength="30"  value="" id="query" autocomplete="off" onkeypress="javascript:if (event.keyCode == 13) return goSearchEngineEnter();" style="-webkit-tap-highlight-color:  rgba(0, 0, 0, 0);"  /></span>
+					<input type="hidden" name="query" id="hiddenQuery"/>
+					<a class="keyword-delete" href="#">검색어 삭제</a>
+					<a href="javascript:goSearchEngineEnter();" class="button"><span for="query">검색</span></a>
+				</div> 
+			</form>
+						<!-- 검색 레이어 -->
+			<div id="search-layer">
+				<a class="search-layer-close" href="#">취소</a>
+				<ul class="tab">
+					<li class="kwtab-1"><a href="#recommend-keyword">추천검색어</a></li>
+					<li class="kwtab-2 on"><a href="#best-keyword">인기검색어</a></li>
+				</ul>
+				<!-- 추천검색어 -->
+				<div id="recommend-keyword" class="keyword-list">
+					<div class="rkw-nodata">추천 검색어가 없습니다.</div>
+					<div class="list-btm">
+						<a href="#">닫기</a>
+					</div>
+				</div>
+
+				<!-- 인기검색어 -->
+				<div id="best-keyword" class="keyword-list">
+					<ul class="bkw-list">
+					
+							<li>
+								<a href="javascript:seearchClick('레스포삭')">
+								
+									<span class="no" style="color: #e51937">1</span>
+									<span class="kw">레스포삭</span>
+								
+									<span class="up status">
+										<span class="stext"></span>
+										<span class="step">11654</span>
+									</span>
+								
+								</a>
+							</li>
+						
+							<li>
+								<a href="javascript:seearchClick('판도라')">
+								
+									<span class="no" style="color: #e51937">2</span>
+									<span class="kw">판도라</span>
+								
+									<span class="up status">
+										<span class="stext"></span>
+										<span class="step">11552</span>
+									</span>
+								
+								</a>
+							</li>
+						
+							<li>
+								<a href="javascript:seearchClick('롱샴')">
+								
+									<span class="no" style="color: #e51937">3</span>
+									<span class="kw">롱샴</span>
+								
+									<span class="up status">
+										<span class="stext"></span>
+										<span class="step">19</span>
+									</span>
+								
+								</a>
+							</li>
+						
+							<li>
+								<a href="javascript:seearchClick('스와로브스키')">
+								
+									<span class="no">4</span>
+									<span class="kw">스와로브스키</span>
+								
+									<span class="up status">
+										<span class="stext"></span>
+										<span class="step">11655</span>
+									</span>
+								
+								</a>
+							</li>
+						
+							<li>
+								<a href="javascript:seearchClick('헤라')">
+								
+									<span class="no">5</span>
+									<span class="kw">헤라</span>
+								
+									<span class="up status">
+										<span class="stext"></span>
+										<span class="step">963</span>
+									</span>
+								
+								</a>
+							</li>
+						
+							<li>
+								<a href="javascript:seearchClick('선글라스')">
+								
+									<span class="no">6</span>
+									<span class="kw">선글라스</span>
+								
+									<span class="up status">
+										<span class="stext"></span>
+										<span class="step">40</span>
+									</span>
+								
+								</a>
+							</li>
+						
+							<li>
+								<a href="javascript:seearchClick('캐스키드슨')">
+								
+									<span class="no">7</span>
+									<span class="kw">캐스키드슨</span>
+																
+									<span class="down status">
+										<span class="stext"></span>
+										<span class="step">2</span>
+									</span>
+								
+								</a>
+							</li>
+						
+							<li>
+								<a href="javascript:seearchClick('비오템')">
+								
+									<span class="no">8</span>
+									<span class="kw">비오템</span>
+								
+									<span class="up status">
+										<span class="stext"></span>
+										<span class="step">11611</span>
+									</span>
+								
+								</a>
+							</li>
+						
+							<li>
+								<a href="javascript:seearchClick('가방')">
+								
+									<span class="no">9</span>
+									<span class="kw">가방</span>
+								
+									<span class="up status">
+										<span class="stext"></span>
+										<span class="step">11602</span>
+									</span>
+								
+								</a>
+							</li>
+						
+							<li>
+								<a href="javascript:seearchClick('설화수')">
+								
+									<span class="no">10</span>
+									<span class="kw">설화수</span>
+								
+									<span class="up status">
+										<span class="stext"></span>
+										<span class="step">37</span>
+									</span>
+								
+								</a>
+							</li>
+						
+							<li>
+								<a href="javascript:seearchClick('카드지갑')">
+								
+									<span class="no">11</span>
+									<span class="kw">카드지갑</span>
+								
+									<span class="up status">
+										<span class="stext"></span>
+										<span class="step">47</span>
+									</span>
+								
+								</a>
+							</li>
+						
+							<li>
+								<a href="javascript:seearchClick('맥')">
+								
+									<span class="no">12</span>
+									<span class="kw">맥</span>
+								
+									<span class="up status">
+										<span class="stext"></span>
+										<span class="step">207</span>
+									</span>
+								
+								</a>
+							</li>
+						
+							<li>
+								<a href="javascript:seearchClick('벤시몽')">
+								
+									<span class="no">13</span>
+									<span class="kw">벤시몽</span>
+								
+									<span class="up status">
+										<span class="stext"></span>
+										<span class="step">170</span>
+									</span>
+								
+								</a>
+							</li>
+						
+							<li>
+								<a href="javascript:seearchClick('키엘')">
+								
+									<span class="no">14</span>
+									<span class="kw">키엘</span>
+								
+									<span class="up status">
+										<span class="stext"></span>
+										<span class="step">23</span>
+									</span>
+								
+								</a>
+							</li>
+						
+							<li>
+								<a href="javascript:seearchClick('쿠론')">
+								
+									<span class="no">15</span>
+									<span class="kw">쿠론</span>
+								
+									<span class="up status">
+										<span class="stext"></span>
+										<span class="step">11549</span>
+									</span>
+								
+								</a>
+							</li>
+						
+							<li>
+								<a href="javascript:seearchClick('입생로랑')">
+								
+									<span class="no">16</span>
+									<span class="kw">입생로랑</span>
+								
+									<span class="up status">
+										<span class="stext"></span>
+										<span class="step">12</span>
+									</span>
+								
+								</a>
+							</li>
+						
+							<li>
+								<a href="javascript:seearchClick('mcm')">
+								
+									<span class="no">17</span>
+									<span class="kw">mcm</span>
+								
+									<span class="up status">
+										<span class="stext"></span>
+										<span class="step">11631</span>
+									</span>
+								
+								</a>
+							</li>
+						
+							<li>
+								<a href="javascript:seearchClick('마이클코어스')">
+								
+									<span class="no">18</span>
+									<span class="kw">마이클코어스</span>
+								
+									<span class="up status">
+										<span class="stext"></span>
+										<span class="step">5</span>
+									</span>
+								
+								</a>
+							</li>
+						
+							<li>
+								<a href="javascript:seearchClick('록시땅')">
+								
+									<span class="no">19</span>
+									<span class="kw">록시땅</span>
+								
+									<span class="up status">
+										<span class="stext"></span>
+										<span class="step">11628</span>
+									</span>
+								
+								</a>
+							</li>
+						
+							<li>
+								<a href="javascript:seearchClick('nars')">
+								
+									<span class="no">20</span>
+									<span class="kw">nars</span>
+								
+									<span class="up status">
+										<span class="stext"></span>
+										<span class="step">155</span>
+									</span>
+								
+								</a>
+							</li>
+						
+					</ul>
+					<div class="list-btm">
+						<a href="#">닫기</a>
+					</div>					
+				</div>
+			</div>
+		</div>
+		<div class="main-gnb">
+			<ul>
+				<li class="home"><a onclick="mainFlickNum(0);">홈</a></li>
+				<li class="hour"><a onclick="mainFlickNum(1);">3시간전샵</a></li>
+				<li class="rank"><a onclick="mainFlickNum(2);">랭킹존</a></li>
+				<li class="event"><a onclick="mainFlickNum(3);">이벤트</a></li>
+				<li class="plan"><a onclick="mainFlickNum(4);">기획전</a></li>
+			</ul>
+		</div>
+
+
+
+		<div id="rside">
+			<!-- 개인화 영역 -->
+			<div class="personalized-area">
+				<!-- 로그인 전 -->
+				<div class="head">
+					<span class="text">로그인 해주세요</span>
+					<a class="button" href="javascript:goPopupLogin();">로그인</a>
+				</div>
+				<div class="body">
+					<div class="grade">
+						<div class="text">로그인 하시고 나의 쇼핑혜택을 확인하세요.</div>
+						<a class="button" href="javascript:goPopupLogin();">마이롯데</a>
+					</div>
+					<ul class="info">
+						<li class="odd"><a class="mp" href="javascript:goPopupLogin();"><span class="label">쿠폰</span></a></li>
+						<li class="even"><a class="mp" href="javascript:goPopupLogin();"><span class="label">롯데포인트</span></a></li>
+						<li class="odd"><a class="mp" href="javascript:goPopupLogin();"><span class="label">적립금</span></a></li>
+						<li class="even"><a class="mp" href="javascript:goPopupLogin();"><span class="label">모바일적립금</span></a></li>
+						<li class="odd"><a class="mp" href="javascript:goPopupLogin();"><span class="label">L.Bean</span></a></li>
+						<li class="even"><a class="mp" href="javascript:goCredit();"><span class="label">신용카드 혜택</span><span class="more">더보기</span></a></li>
+					</ul>
+				</div>
+
+				
+			</div>
+
+			<!-- 쇼핑 가이드 -->
+			<div class="shopping-guide">
+				<strong class="title">쇼핑 가이드</strong>
+				<ul>
+					<li class="m1"><a href="Mypage-OrderList"><span>주문내역</span></a></li>
+					<li class="m2"><a href="Mypage-TimeCheck"><span>주문가능시간</span></a></li>
+					<li class="m3"><a href="Index-Delivery"><span>인도장</span></a></li>
+					<li class="m4"><a href="ShoppingGuide-ShoppingGuide"><span>쇼핑가이드</span></a></li>
+					<li class="m5"><a href="#exchange-rate-information" onclick="getWonRate();"><span>환율정보</span></a></li>
+					<li class="m6"><a href="Index-Customer"><span>고객센터</span></a></li>
+					<li class="m7"><a href="Customer-Counsel"><span>1:1문의</span></a></li>
+					<li class="m8"><a href="Member-AutoLogin"><span>설정</span></a></li>
+				</ul>
+			</div>
+			
+			<!-- 쇼핑 플러스 -->
+			<div class="shopping-plus">
+				<strong class="title">쇼핑 플러스</strong>
+				<ul>
+					<li class="m1"><a href="http://m.lottedfs.com/handler/Luxury-Intro"><span>프라이빗 명품 라운지</span></a></li>
+					<li class="m2"><a href="http://m.lottedfs.com/handler/OutletMall-Main"><span>합리적인 쇼핑공간</span></a></li>
+				</ul>
+			</div>
+			
+			
+			
+<!-- 통합메뉴 환율 -->
+<script>
+function getWonRate(f_date){
+	var param;
+	if(f_date ==null || f_date == undefined){
+		var newDate= new Date();
+		var mm = (newDate.getMonth()+1)+"";
+		if (mm.length == 1){
+			mm = "0"+mm;
+		}
+		
+		f_date = newDate.getFullYear()+""+mm;
+	}
+	
+	var requestUrl = "http://m.lottedfs.com/handler";
+		
+	
+	 param = "reteDT="+f_date;
+	$.ajax({
+		type: "POST",
+		url:requestUrl+"/Mypage-GetWonRate",
+		dataType:"html",
+		data:param,
+		async:true,
+		contentType : "application/x-www-form-urlencoded; charset=UTF-8",
+		success: function(result){
+			$("#exchange-rate-information").html(result);
+		}
+	 });
+}
+
+function prevMonth(f_year, f_month){
+	f_month = +f_month-1;
+	
+	var newDate = new Date(f_year, f_month, 1, 00,00,00);
+	newDate.setFullYear(f_year);
+	newDate.setMonth(newDate.getMonth()-1);
+	newDate.setDate(1);
+	
+	var mm = (newDate.getMonth()+1)+"";
+	if (mm.length == 1){
+		mm = "0"+mm;
+	}
+
+	var f_date = newDate.getFullYear() +""+ mm;
+	getWonRate(f_date);
+}
+
+function nextMonth(f_year, f_month){
+	f_month = +f_month-1;
+	
+	var newDate = new Date(f_year, f_month, 1, 00,00,00);
+	newDate.setFullYear(f_year);
+	newDate.setMonth(newDate.getMonth()+1);
+	newDate.setDate(1);
+	
+	var mm = (newDate.getMonth()+1)+"";
+	if (mm.length == 1){
+		mm = "0"+mm;
+	}
+	
+	var f_date = newDate.getFullYear() +""+ mm;
+	getWonRate(f_date);
+}
+
+</script>
+			<!-- 환율정보 -->
+			<div id="exchange-rate-information">
+				<div class="dim"></div>
+				<div class="exchange-box">
+					<div class="head">
+						<strong class="title">환율정보</strong>
+						<a class="close" href="#">환율정보 닫기</a>
+						<div class="navi">
+							<span class="ym"><span class="y">2014</span>. <span class="m">06</span></span>
+							<a class="prev" href="#">이전 달</a>
+							<a class="next" href="#">다음 달</a>
+						</div>
+					</div>
+					<div class="body">
+						<div class="scroll-area">
+							<table summary="이 표는 날짜 별 환율정보를 제공합니다.">
+								<caption>환율정보</caption>
+								<thead>
+									<tr>
+										<th scope="col">요일</th>
+										<th scope="col">날짜</th>
+										<th scope="col">환율</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td class="week">SUN</td>
+										<td class="day today">28<span class="t">일</span></td>
+										<td class="exchange"><span class="t">&#x20a9;</span> 1,068.0</td>
+									</tr>
+									<tr>
+										<td class="week">SAT</td>
+										<td class="day">27<span class="t">일</span></td>
+										<td class="exchange"><span class="t">&#x20a9;</span> 1,068.0</td>
+									</tr>
+									<tr>
+										<td class="week">FRI</td>
+										<td class="day">26<span class="t">일</span></td>
+										<td class="exchange"><span class="t">&#x20a9;</span> 1,068.0</td>
+									</tr>
+									<tr>
+										<td class="week">THU</td>
+										<td class="day">25<span class="t">일</span></td>
+										<td class="exchange"><span class="t">&#x20a9;</span> 1,068.0</td>
+									</tr>
+									<tr>
+										<td class="week">WED</td>
+										<td class="day">24<span class="t">일</span></td>
+										<td class="exchange"><span class="t">&#x20a9;</span> 1,068.0</td>
+									</tr>
+									<tr>
+										<td class="week">TUE</td>
+										<td class="day">23<span class="t">일</span></td>
+										<td class="exchange"><span class="t">&#x20a9;</span> 1,068.0</td>
+									</tr>
+									<tr>
+										<td class="week">MON</td>
+										<td class="day">22<span class="t">일</span></td>
+										<td class="exchange"><span class="t">&#x20a9;</span> 1,068.0</td>
+									</tr>
+									<tr>
+										<td class="week">SUN</td>
+										<td class="day">21<span class="t">일</span></td>
+										<td class="exchange"><span class="t">&#x20a9;</span> 1,068.0</td>
+									</tr>
+									<tr>
+										<td class="week">SAT</td>
+										<td class="day">20<span class="t">일</span></td>
+										<td class="exchange"><span class="t">&#x20a9;</span> 1,068.0</td>
+									</tr>
+									<tr>
+										<td class="week">FRI</td>
+										<td class="day">19<span class="t">일</span></td>
+										<td class="exchange"><span class="t">&#x20a9;</span> 1,068.0</td>
+									</tr>
+									<tr>
+										<td class="week">THU</td>
+										<td class="day">18<span class="t">일</span></td>
+										<td class="exchange"><span class="t">&#x20a9;</span> 1,068.0</td>
+									</tr>
+									<tr>
+										<td class="week">WED</td>
+										<td class="day">17<span class="t">일</span></td>
+										<td class="exchange"><span class="t">&#x20a9;</span> 1,068.0</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+					<div class="foot">
+						<!-- <a class="up" href="#">위로</a>
+						<a class="down" href="#">아래로</a> -->
+					</div>
+				</div>
+			</div>
+
+			<a class="close-rside" href="#">통합메뉴 닫기</a>
+		</div>
+
+		<!-- :::::::::::::::::::::::::::::::::::::::::::::::::::::: / 공통 - TOP :::::::::::::::::::::::::::::::::::::::::::::::::::::: -->
+  <div class="sub-container">
+  <!-- contents -->
+  <div id="content_wrap">
+    <!-- 타이틀_모바일 OPEN 기념 적립금 증정 -->
+    
+    <!-- 상단 타이틀 영역 -->
+	<div class="sub-top">
+		<a class="previous-page" href="javascript:history.back();">이전</a>
+		<div class="page-title">
+			<h2>가을 밤 하늘 꼭꼭 숨어있는 별자리 찾기</h2>
+		</div>
+	</div>	
+	
+	<!-- 이벤트 디자인팀 작업영역 시작 -->
+    <div class="align">
+		
+		<link rel="stylesheet" type="text/css" href="mobile/images/event/20160901_starline/style.css" />
+		<script type="text/javascript">
+
+		//별 선택 후 당첨화면 보이기
+		function star_select(){
+			$(".game_zone .star_content").hide();
+			$(".game_zone .login_cont").hide();
+
+			//당첨 화면
+			$(".game_zone .winner_4").fadeIn(500).show();
+		}
+
+		</script>
+		<div class="evWrap">
+			<div class="top_event_wrap">
+				<div class="top_container">
+					<p class="top_txt">
+						<img src="mobile/images/event/20160901_starline/title.png" alt="반짝반짝 가을 밤 하늘 꼭꼭 숨어있는 별자리 찾기 숨어있는 가을 별자리를 찾으면 적립금 즉시 증정! | 이벤트 기간 : 2016. 9. 19 ~ 2016. 9. 30, 이벤트 대상 : 모든 회원, 총 5회, 적립금 유효기간 : 2016. 9. 30 까지" />
+					</p>
+					
+					<div class="game_zone">
+						<!-- 별 선택 영역 -->
+						<div class="star_content">
+							<a href="#" class="star_1" onclick="star_select();return false;"></a>
+							<a href="#" class="star_2" onclick="star_select();return false;"></a>
+							<a href="#" class="star_3" onclick="star_select();return false;"></a>
+							<a href="#" class="star_4" onclick="star_select();return false;"></a>
+							<a href="#" class="star_5" onclick="star_select();return false;"></a>
+						</div>
+						<!-- //별 선택 영역 -->
+
+
+						<div class="login_cont">
+							<!-- 로그인 하기 전 -->
+							<div class="login_before">
+								<p class="hide">로그인 후 별을 선택해주세요.</p>
+								<a href="#" class="btn_login" onclick="">로그인하기</a>
+							</div>
+							<!-- //로그인 하기 전 -->
+
+							<!-- 로그인 후 --
+							<div class="login_after">
+								<p class="hide">맘에 드는 별을 선택해주세요.</p>
+							</div>
+							<!-- //로그인 후 -->
+						</div>
+						
+						<!-- 블랙홀(꽝) 당첨 영역 -->
+						<div class="winner winner_0">
+							<img src="mobile/images/event/20160901_starline/winner_0.jpg" alt="블랙홀에 빠졌다! 적립금 0원" />
+						</div>
+						<!-- //블랙홀(꽝) 당첨 영역 -->
+						
+						<!-- 1일차 당첨 영역 -->
+						<div class="winner winner_1">
+							<img src="mobile/images/event/20160901_starline/winner_1.jpg" alt="찾았다! 페가수스자리 적립금 200원" />
+						</div>
+						<!-- //1일차 당첨 영역 -->
+						
+						<!-- 2일차 당첨 영역 -->
+						<div class="winner winner_2">
+							<img src="mobile/images/event/20160901_starline/winner_2.jpg" alt="찾았다! 염소자리 적립금 200원" />
+						</div>
+						<!-- //2일차 당첨 영역 -->
+						
+						<!-- 3일차 당첨 영역 -->
+						<div class="winner winner_3">
+							<img src="mobile/images/event/20160901_starline/winner_3.jpg" alt="찾았다! 물고기자리 적립금 200원" />
+						</div>
+						<!-- //3일차 당첨 영역 -->
+						
+						<!-- 4일차 당첨 영역 -->
+						<div class="winner winner_4">
+							<img src="mobile/images/event/20160901_starline/winner_4.jpg" alt="찾았다! 물병자리 적립금 200원" />
+						</div>
+						<!-- //4일차 당첨 영역 -->
+						
+						<!-- 5일차 당첨 영역 -->
+						<div class="winner winner_5">
+							<img src="mobile/images/event/20160901_starline/winner_5.jpg" alt="찾았다! 안드로메다자리 적립금 200원" />
+						</div>
+						<!-- //5일차 당첨 영역 -->
+					
+					</div>
+				
+					<!-- 이벤트 참여 결과 영역 -->
+					<div class="result_content">
+						<div class="result_zone">
+							<p class="txt"><img src="mobile/images/event/20160901_starline/title_2.png" alt="나의 이벤트 참여 결과" /></p>
+
+							<!-- 
+							적립완료 시 클래스 추가 : end 
+							꽝 시 클래스 추가 : zero
+							대기중 시 클래스 추가 : wait
+							-->
+
+							<ul class="result">
+								<li class="first end">1차 페가수스</li>
+								<li class="second zero">2차 염소</li>
+								<li class="third end">3차 물고기</li>
+								<li class="four wait">4차 물병</li>
+								<li class="five wait">5차 안드로메다</li>
+							</ul>
+						</div>
+					</div>
+					<!-- //이벤트 참여 결과 영역 -->
+				</div>
+
+				<div class="bottom_container">
+					<img src="mobile/images/event/20160901_starline/img_bottom.jpg" alt="참여방법 첫번째 로그인 후 맘에 드는 별 선택, 두번째 가을 별자리가 나타나면 적립금 즉시증정 (200원), 세번째 한 ID당 하루 1번, 총 5회 참여 가능(최대 1,000원)" class="c_img" />
+				</div>
+			</div>
+
+			<!-- 꼭 알아두세요 -->
+			<div class="notice_content">
+				<span class="top_txt">꼭 알아두세요!</span>
+				<ul class="l_txt">
+					<li>본 이벤트는 모바일에서만 1일 1회, 총 5회 참여가능 합니다.</li>
+					<li>지급된 적립금은 모바일 전용 적립금으로 모바일에서만 사용가능하며, 유효기간 내에만 사용 가능하며 이후 자동 소멸됩니다. </li>
+					<li>게임 참여 후 미 당첨된 고객님께는 적립금이 지급되지 않습니다.</li>
+					<li>본 이벤트는 당사 사정에 의하여 변경 및 조기종료 될 수 있습니다.</li>
+                </ul>
+			</div>
+			<!-- //꼭 알아두세요 -->
+
+		</div>
+    </div>    
+	<!-- //이벤트 디자인팀 작업영역 시작 -->
+
+
+
+
+
+</div>
+  <!-- footer include-->
+  
+<!-- footer -->
+<script type="text/javascript" src="http://image.lottedfs.com/static-root/mobile/js/mwah/BICommon.js"></script>
+<script type="text/javascript">
+//<![CDATA[
+  function goAlert(){
+	  alert("롯데면세점 통합 정보 시스템 오픈으로 인한 주문가능 시간 확인이 불가능 합니다. \n 불편을 드려 죄송합니다.");
+  }
+  
+  	//로그아웃 버튼을 직접 클릭했을 때만 호출!!!
+	function logout_from_btn1() {
+		var autoLogin =  "Y";
+		setCookie1( "AutoLogin", autoLogin , -1 );
+		setCookie1( "logout_from_btn", "Y" , 1 );
+    	document.location.href = "http://member.lottetown.com/door/sso/logout.jsp?sid=MDFS";
+	}
+	
+	function calling_alert(){
+		var call
+		call = confirm("전화연결을 하시겠습니까?\n고객센터 1688-3000\n상담가능시간 08:00 ~ 23:00") 
+		if(call == true){
+			location.href="tel:1688-3000";
+			//location.href="tel:080-930-1500";
+		} else {
+			return;
+		}
+	}		
+	function onopen(){
+		var url = "http://www.ftc.go.kr/info/bizinfo/communicationViewPopup.jsp?wrkr_no="+frm1.wrkr_no.value;
+		window.open(url,"communicationViewPopup","width=750, height=700;");
+	}	
+
+//]]>  
+</script>
+		
+		<!-- 더보기 -->
+		<div id="m_more">
+			<a class="button" href="#">
+				<span><em class="hide">더보기 열기/닫기</em></span>
+			</a>
+			<div class="links">
+				<ul>
+					<li class="m1"><a href="Mypage-TimeCheck">주문가능시간</a></li>
+					<li class="m2"><a href="BasketView?IS_TODAY_MODE=1">오늘본상품</a></li>
+					<li class="m3"><a href="https://m.lottedfs.com/handler/Mypage-OrderList">주문내역</a></li>
+					<li class="m4"><a href="BasketView-WishProduct">관심상품</a></li>
+					<li class="m5"><a href="ShoppingGuide-ShoppingGuide">쇼핑가이드</a></li>
+					<li class="m6"><a href="Mypage-Main">마이롯데</a></li>
+					<li class="m7"><a href="BasketView-Start">장바구니</a></li>
+					<li class="m8"><a href="Customer-Counsel">1:1상담</a></li>
+					<li class="m9"><a href="Member-AutoLogin">설정</a></li>
+				</ul>
+				<span class="ef"></span>
+			</div>
+		</div>
+		<div id="m_more_close_touch_area"></div>
+		
+		<!-- TOP -->
+		<div id="m_top">
+			<a class="button" href="#">
+				<span><em class="hide">상단으로</em></span>
+			</a>
+		</div>
+		<div id="footer">
+			<ul class="ft-link">
+				<li><a href="http://m.lottedfs.com/handler/Index-Store">지점안내</a></li>
+				<li><a href="http://m.lottedfs.com/handler/Index-Delivery">인도장안내</a></li>
+				 
+							<li><a href="javascript:goPopupLogin();">로그인</a></li>
+	  			   
+			</ul>
+
+		<form name="frm1">
+			<input name="wrkr_no" type="hidden" value="1048518866"/>
+		</form>
+
+			<div class="exchange">환율 <strong>&#x20a9;<span>1,008.9</span></strong></div>
+			<div class="text">
+				(주)호텔롯데 롯데면세점 대표이사 : 이홍균 <br />
+				서울시 중구 남대문로 81, <a class="cnum" href="javascript:onopen();" target="_blank" title="새창">사업자등록번호 : 104-85-18866</a><br />
+				통신판매 신고 : 중구 제07647호<br />
+				호스팅사업자 : (주)롯데닷컴<br />
+				개인정보관리책임자 : 이강훈 팀장<br />
+				<a class="call" href="javascript:calling_alert();">고객센터 : 1688-3000</a> / lottedfs@lottedfs.co.kr<br />
+				Copyright &copy; Lottehotel All Rights Reserved.
+			</div>
+
+			<ul class="fb-link">
+				<li><a href="http://m.lottedfs.com/handler/ShoppingGuide-Lotteinfo">회사소개</a></li>
+				<li><a href="http://m.lottedfs.com/handler/ShoppingGuide-Agree">이용약관</a></li>
+				<li><a href="http://m.lottedfs.com/handler/ShoppingGuide-Policy">개인정보취급(처리)방침</a></li>
+			</ul>
+		</div>
+  </div>
+  </div>
+</div>
+</body>
+</html>
+                 

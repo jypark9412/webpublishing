@@ -1,0 +1,126 @@
+.evWrap {position:relative; width:100%;}
+.evWrap .c_img {width:100%;}
+.evWrap .hide{position:absolute;left:1px;top:1px;width:1px;height:1px;visibility:hidden;}
+
+.evWrap .event_zone{position:relative;width:100%;height:435px;background:url("http://image.lottedfs.com/static-root/mobile/images/event/20160801_balloon/bg.jpg") no-repeat;background-size:100% 435px}
+.evWrap .event_zone .balloon_cont{position:relative;width:320px;margin:0 auto}
+.evWrap .event_zone .balloon_cont .title{position:absolute;top:0px;z-index:100}
+.evWrap .event_zone .balloon_cont .txt{position:absolute;top:633px}
+.evWrap .balloon_cont .login_zone{width:105px;height:101px;position:absolute;top:240px;left:206px;z-index:1000}
+.evWrap .balloon_cont .login_zone .login_before{position:relative;width:105px;height:101px;background:url("http://image.lottedfs.com/static-root/mobile/images/event/20160801_balloon/login_before.png") no-repeat;background-size:105px 101px}
+.evWrap .balloon_cont .login_zone .login_before .btn_login{display:block;overflow:hidden;position:absolute;left:19px;top:50px;width:69px;height:25px;text-indent:-9999px}
+.evWrap .balloon_cont .login_zone .login_after{position:relative;width:132px;height:160px;background:url("http://image.lottedfs.com/static-root/mobile/images/event/20160801_balloon/login_after.png") no-repeat;background-size:132px 160px}
+
+.evWrap .items_cont{position:relative;}
+.evWrap .items_cont:before{content:'';display:block;width:83px;height:55px;position:absolute;left:13px;top:351px;background:url("http://image.lottedfs.com/static-root/mobile/images/event/20160801_balloon/banana.png") no-repeat;background-size:83px 55px}
+.evWrap .items_cont:after{content:'';display:block;width:104px;height:103px;position:absolute;left:107px;top:278px;background:url("http://image.lottedfs.com/static-root/mobile/images/event/20160801_balloon/cat.png") no-repeat;background-size:104px 103px}
+.evWrap .items_cont .items li{position:absolute}
+.evWrap .items_cont .items .item_01{width:63px;height:216px;left:54px;top:120px;background:url("http://image.lottedfs.com/static-root/mobile/images/event/20160801_balloon/b_line_01.png") no-repeat;background-size:63px 216px;animation: moving2 5s infinite;-webkit-animation: moving2 5s infinite}
+.evWrap .items_cont .items .item_02{width:68px;height:196px;left:102px;top:124px;background:url("http://image.lottedfs.com/static-root/mobile/images/event/20160801_balloon/b_line_02.png") no-repeat;background-size:68px 196px;animation: moving2 4s infinite;-webkit-animation: moving2 4s infinite}
+.evWrap .items_cont .items .item_03{width:39px;height:191px;left:202px;top:144px;background:url("http://image.lottedfs.com/static-root/mobile/images/event/20160801_balloon/b_line_03.png") no-repeat;background-size:39px 191px;animation: moving2 5s infinite;-webkit-animation: moving2 5s infinite}
+.evWrap .items_cont .items .item_04{width:39px;height:107px;left:74px;top:220px;background:url("http://image.lottedfs.com/static-root/mobile/images/event/20160801_balloon/b_line_04.png") no-repeat;background-size:39px 107px;animation: moving2 4s infinite;-webkit-animation: moving2 4s infinite}
+.evWrap .items_cont .items .item_05{width:30px;height:92px;left:180px;top:240px;background:url("http://image.lottedfs.com/static-root/mobile/images/event/20160801_balloon/b_line_05.png") no-repeat;background-size:30px 92px;animation: moving2 3s infinite;-webkit-animation: moving2 3s infinite}
+
+.evWrap .items_cont .items li a{display:block;overflow:hidden;position:absolute;text-indent:-9999px}
+.evWrap .items_cont .items .item_01 a{width:93px;height:108px;left:-46px;top:-100px;background:url("http://image.lottedfs.com/static-root/mobile/images/event/20160801_balloon/balloon_01.png") no-repeat;background-size:93px 108px;}
+.evWrap .items_cont .items .item_02 a{width:92px;height:112px;left:24px;top:-100px;background:url("http://image.lottedfs.com/static-root/mobile/images/event/20160801_balloon/balloon_02.png") no-repeat;background-size:92px 112px;}
+.evWrap .items_cont .items .item_03 a{width:94px;height:103px;left:22px;top:-90px;background:url("http://image.lottedfs.com/static-root/mobile/images/event/20160801_balloon/balloon_03.png") no-repeat;background-size:94px 103px}
+.evWrap .items_cont .items .item_04 a{width:92px;height:109px;left:-20px;top:-92px;background:url("http://image.lottedfs.com/static-root/mobile/images/event/20160801_balloon/balloon_04.png") no-repeat;background-size:92px 109px}
+.evWrap .items_cont .items .item_05 a{width:92px;height:110px;left:-26px;top:-92px;background:url("http://image.lottedfs.com/static-root/mobile/images/event/20160801_balloon/balloon_05.png") no-repeat;background-size:92px 110px;}
+
+.evWrap .items_cont .items .item_01 a.bomb{width:103px;height:108px;left:-46px;top:-100px;background:url("http://image.lottedfs.com/static-root/mobile/images/event/20160801_balloon/bomb_01.png") no-repeat;background-size:103px 108px;}
+.evWrap .items_cont .items .item_02 a.bomb{width:99px;height:111px;left:24px;top:-100px;background:url("http://image.lottedfs.com/static-root/mobile/images/event/20160801_balloon/bomb_02.png") no-repeat;background-size:99px 111px;}
+.evWrap .items_cont .items .item_03 a.bomb{width:99px;height:110px;left:22px;top:-90px;background:url("http://image.lottedfs.com/static-root/mobile/images/event/20160801_balloon/bomb_03.png") no-repeat;background-size:99px 110px}
+.evWrap .items_cont .items .item_04 a.bomb{width:99px;height:111px;left:-20px;top:-92px;background:url("http://image.lottedfs.com/static-root/mobile/images/event/20160801_balloon/bomb_04.png") no-repeat;background-size:99px 111px}
+.evWrap .items_cont .items .item_05 a.bomb{width:99px;height:110px;left:-26px;top:-92px;background:url("http://image.lottedfs.com/static-root/mobile/images/event/20160801_balloon/bomb_05.png") no-repeat;background-size:99px 110px;}
+
+.evWrap .result_cont{overflow:hidden;position:relative;height:314px;background-color:#fbebcb}
+.evWrap .result_zone{width:320px;height:314px;margin:0 auto;background:url("http://image.lottedfs.com/static-root/mobile/images/event/20160801_balloon/bg_result.jpg") no-repeat;background-size:320px 314px}
+.evWrap .result_zone .result{width:320px;position:absolute;top:34px;margin-left:84px}
+.evWrap .result_zone .result li{float:left;width:79px;height:87px;margin:0 0px 0px 0;text-indent:-9999px}
+.evWrap .result_zone .result li.wait{background:url("http://image.lottedfs.com/static-root/mobile/images/event/20160801_balloon/waiting.png") no-repeat;background-size:72px 87px}
+.evWrap .result_zone .result li.zero{background:url("http://image.lottedfs.com/static-root/mobile/images/event/20160801_balloon/zero.png") no-repeat;background-size:72px 87px}
+.evWrap .result_zone .result li.end{background:url("http://image.lottedfs.com/static-root/mobile/images/event/20160801_balloon/save_200.png") no-repeat;background-size:72px 87px}
+.evWrap .result_zone .result li.third{position:absolute;left:-40px;top:111px}
+.evWrap .result_zone .result li.four{position:absolute;left:38px;top:111px}
+.evWrap .result_zone .result li.five{position:absolute;left:118px;top:111px}
+
+
+.evWrap .event_zone .popup .bg_popup{position:absolute;top:-800px;left:0;width:100%;height:1530px;background-color:#000;opacity:0.7;z-index:1000}
+.evWrap .event_zone .popup .giftPop{width:100%;position:absolute;top:0px;left:0;z-index:1000}
+.evWrap .event_zone .giftPop img{width:310px;height:377px;}
+.evWrap .event_zone .popZone{position:relative;width:310px;margin: 0 auto}
+.evWrap .event_zone .popup_zero img{width:310px;height:377px;}
+.evWrap .event_zone .popup .btn_pclose{display:block;overflow:hidden;width:94px;height:28px;position:absolute;left:109px;top:305px;background:url("http://image.lottedfs.com/static-root/mobile/images/event/20160801_balloon/btn_close.png") no-repeat;background-size:94px 28px;text-indent:-9999px}
+
+/* Ç³¼± ¸ð¼Ç 
+@keyframes moving {
+	0%{
+		transform: translateY(0px) translateX(0px) rotate(0);
+	}
+	25%{
+		transform: translateY(0px) translateX(-1px) rotate(1deg);
+	}
+	50%{
+		transform: translateY(0px) translateX(1px) rotate(0);
+	}
+	75%{
+		transform: translateY(0px) translateX(-1px) rotate(1deg);
+	}
+	100%{
+		transform: translateY(0px) translateX(0px) rotate(0);
+	}
+}
+@-webkit-keyframes moving {
+	0%{
+		transform: translateY(0px) translateX(0px) rotate(0);
+	}
+	25%{
+		transform: translateY(0px) translateX(-1px) rotate(0);
+	}
+	50%{
+		transform: translateY(0px) translateX(1px) rotate(0);
+	}
+	75%{
+		transform: translateY(0px) translateX(-1px) rotate(0);
+	}
+	100%{
+		transform: translateY(0px) translateX(0px) rotate(0);
+	}
+}
+*/
+
+@keyframes moving2 {
+	0%{
+		transform: translateY(-2px) translateX(0px) rotate(1deg);
+	}
+	25%{
+		transform: translateY(0px) translateX(0px) rotate(0);
+	}
+	50%{
+		transform: translateY(2px) translateX(0px) rotate(2deg);
+	}
+	75%{
+		transform: translateY(0px) translateX(0px) rotate(0);
+	}
+	100%{
+		transform: translateY(-2px) translateX(0px) rotate(1deg);
+	}
+}
+@-webkit-keyframes moving2 {
+	0%{
+		transform: translateY(-2px) translateX(0px) rotate(1deg);
+	}
+	25%{
+		transform: translateY(0px) translateX(0px) rotate(0);
+	}
+	50%{
+		transform: translateY(2px) translateX(0px) rotate(2deg);
+	}
+	75%{
+		transform: translateY(0px) translateX(0px) rotate(0);
+	}
+	100%{
+		transform: translateY(-2px) translateX(0px) rotate(1deg);
+	}
+}
