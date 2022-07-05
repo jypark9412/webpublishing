@@ -1,0 +1,95 @@
+.evWrap {position:relative; width:100%;}
+.evWrap .c_img {width:100%;}
+.evWrap .hide {position:absolute;left:1px;top:1px;width:1px;height:1px;visibility:hidden;}
+.evWrap ul{list-style:none;}}
+
+.evWrap .content_1 {background:#fff; padding:19px 0; width:}
+.evWrap .content_1 .boxA{position:relative; width:287px; height:166px; margin:0 auto;}
+.evWrap .content_1 .boxA table{width:287px; position:absolute; top:31px; border-top:2px solid #ff3300; border-bottom:2px solid #ff3300}
+.evWrap .content_1 .boxA table th{color:#666; height:33px; border-bottom:1px solid #ff3300}
+.evWrap .content_1 .boxA table th.num{width:94px;}
+.evWrap .content_1 .boxA table td{height:25px;}
+
+.evWrap .content_1 tbody tr:first-child td {color:#ff0000;}
+.evWrap .content_1 tbody tr:last-child td {color:#7e7e7e;}
+
+.evWrap .event_star{position:relative;background-color:#1cd2a6}
+.evWrap .event_star .star_cnt{width:320px;height:304px;margin:0 auto;background:url("./star_box.jpg") no-repeat;background-size:320px 304px;}
+.evWrap .event_star .star_cnt .attend_cnt{padding-top:150px}
+.evWrap .event_star .star_cnt .star_save{width:194px;height:101px;margin:0 auto;background:url("./my_star.png") no-repeat;background-size:194px 101px;}
+.evWrap .event_star .star_cnt .star_save .btn_star{display:block;overflow:hidden;width:176px;height:36px;padding-top:40px;text-indent:-9999px}
+.evWrap .event_star .star_cnt .star_score{display:block;width:185px;height:120px;margin:0 auto;padding:8px 0 0 82px;background:url("./my_score.png") no-repeat center 15px;background-size:185px 94px}
+.evWrap .event_star .star_cnt .star_score > p{overflow:hidden;width:119px;height:27px;background-color:#ebebeb;text-align:right;padding-right:4px;}
+.evWrap .event_star .star_score .silver{margin-top:0px}
+.evWrap .event_star .star_score .gold{margin-top:4px}
+.evWrap .event_star .star_score .total{margin-top:23px}
+.evWrap .event_star .star_cnt .star_score span{color:#303030;font-size:14px;line-height:28px;font-weight:bold;font-family:Verdana;letter-spacing:-1px}
+
+
+/* ¿À´ÃÀÇ ½ºÅ¸ µüÁö CSS */
+.evWrap .star_area{position:relative;background-color:#f3fdfa}
+.evWrap .star_blind_area{width:100%;height:262px;position:absolute;top:10px;left:0px;background:#333;opacity:0.8;z-index:1000}
+.evWrap .star_blind_area .blind{width:225px;margin:0 auto;padding-top:94px;opacity:1 !important}
+.evWrap .star_line_area{position:relative;overflow:hidden;width:300px;margin:0 auto}
+.evWrap .star_line_area .starLine{width:7000px;height:282px;}
+.evWrap .star_line_area .starLine li{float:left}
+.evWrap .star_line_area .starLine li span{display:block;width:320px;height:282px;text-indent:-9999px;font-size:0}
+.evWrap .star_line_area .starLine li span.day_12{margin:20px 0 0 -9px;background:url("./star_12_off.png") no-repeat center center;background-size:169px 191px}
+.evWrap .star_line_area .starLine li span.day_13{margin:20px 0 0 -9px;background:url("./star_13_off.png") no-repeat center center;background-size:169px 191px}
+.evWrap .star_line_area .starLine li span.day_14{margin:20px 0 0 -9px;background:url("./star_14_off.png") no-repeat center center;background-size:169px 191px}
+.evWrap .star_line_area .starLine li span.day_15{margin:20px 0 0 -9px;background:url("./star_15_off.png") no-repeat center center;background-size:169px 191px}
+.evWrap .star_line_area .starLine li span.day_16{margin:20px 0 0 -9px;background:url("./star_16_off.png") no-repeat center center;background-size:169px 191px}
+.evWrap .star_line_area .starLine li span.day_17{margin:20px 0 0 -9px;background:url("./star_17_off.png") no-repeat center center;background-size:169px 191px}
+.evWrap .star_line_area .starLine li span.day_18{margin:20px 0 0 -9px;background:url("./star_18_off.png") no-repeat center center;background-size:169px 191px}
+.evWrap .star_line_area .starLine li span.day_19{margin:20px 0 0 -9px;background:url("./star_19_off.png") no-repeat center center;background-size:169px 191px}
+.evWrap .star_line_area .starLine li span.day_20{margin:20px 0 0 -9px;background:url("./star_20_off.png") no-repeat center center;background-size:169px 191px}
+.evWrap .star_line_area .starLine li span.day_21{margin:20px 0 0 -9px;background:url("./star_21_off.png") no-repeat center center;background-size:169px 191px}
+.evWrap .star_line_area .starLine li span.day_22{margin:20px 0 0 -9px;background:url("./star_22_off.png") no-repeat center center;background-size:169px 191px}
+.evWrap .star_line_area .starLine li span.day_23{margin:20px 0 0 -9px;background:url("./star_23_off.png") no-repeat center center;background-size:169px 191px}
+.evWrap .star_line_area .starLine li span.day_24{margin:20px 0 0 -9px;background:url("./star_24_off.png") no-repeat center center;background-size:169px 191px}
+.evWrap .star_line_area .starLine li span.day_25{margin:20px 0 0 -9px;background:url("./star_25_off.png") no-repeat center center;background-size:169px 191px}
+.evWrap .star_line_area .starLine li span.day_26{margin:20px 0 0 -9px;background:url("./star_26_off.png") no-repeat center center;background-size:169px 191px}
+.evWrap .star_line_area .starLine li span.day_27{margin:20px 0 0 -9px;background:url("./star_27_off.png") no-repeat center center;background-size:169px 191px}
+.evWrap .star_line_area .starLine li span.day_28{margin:20px 0 0 -9px;background:url("./star_28_off.png") no-repeat center center;background-size:169px 191px}
+.evWrap .star_line_area .starLine li span.day_29{margin:20px 0 0 -9px;background:url("./star_29_off.png") no-repeat center center;background-size:169px 191px}
+.evWrap .star_line_area .starLine li span.day_30{margin:20px 0 0 -9px;background:url("./star_30_off.png") no-repeat center center;background-size:169px 191px}
+.evWrap .star_line_area .starLine li span.day_31{margin:20px 0 0 -9px;background:url("./star_31_off.png") no-repeat center center;background-size:169px 191px}
+
+
+
+/* ´çÀÏ ¿À´ÃÀÇ½ºÅ¸ µüÁö CSS */
+.evWrap .star_line_area .starLine li span.today{margin:0 0 0 -20px}
+.evWrap .star_line_area .starLine li span.day_12.today{background:url("./star_12_on.png") no-repeat center center;background-size:220px 250px}
+.evWrap .star_line_area .starLine li span.day_13.today{background:url("./star_13_on.png") no-repeat center center;background-size:220px 250px}
+.evWrap .star_line_area .starLine li span.day_14.today{background:url("./star_14_on.png") no-repeat center center;background-size:220px 250px}
+.evWrap .star_line_area .starLine li span.day_15.today{background:url("./star_15_on.png") no-repeat center center;background-size:220px 250px}
+.evWrap .star_line_area .starLine li span.day_16.today{background:url("./star_16_on.png") no-repeat center center;background-size:220px 250px}
+.evWrap .star_line_area .starLine li span.day_17.today{background:url("./star_17_on.png") no-repeat center center;background-size:220px 250px}
+.evWrap .star_line_area .starLine li span.day_18.today{background:url("./star_18_on.png") no-repeat center center;background-size:220px 250px}
+.evWrap .star_line_area .starLine li span.day_19.today{background:url("./star_19_on.png") no-repeat center center;background-size:220px 250px}
+.evWrap .star_line_area .starLine li span.day_20.today{background:url("./star_20_on.png") no-repeat center center;background-size:220px 250px}
+.evWrap .star_line_area .starLine li span.day_21.today{background:url("./star_21_on.png") no-repeat center center;background-size:220px 250px}
+.evWrap .star_line_area .starLine li span.day_22.today{background:url("./star_22_on.png") no-repeat center center;background-size:220px 250px}
+.evWrap .star_line_area .starLine li span.day_23.today{background:url("./star_23_on.png") no-repeat center center;background-size:220px 250px}
+.evWrap .star_line_area .starLine li span.day_24.today{background:url("./star_24_on.png") no-repeat center center;background-size:220px 250px}
+.evWrap .star_line_area .starLine li span.day_25.today{background:url("./star_25_on.png") no-repeat center center;background-size:220px 250px}
+.evWrap .star_line_area .starLine li span.day_26.today{background:url("./star_26_on.png") no-repeat center center;background-size:220px 250px}
+.evWrap .star_line_area .starLine li span.day_27.today{background:url("./star_27_on.png") no-repeat center center;background-size:220px 250px}
+.evWrap .star_line_area .starLine li span.day_28.today{background:url("./star_28_on.png") no-repeat center center;background-size:220px 250px}
+.evWrap .star_line_area .starLine li span.day_29.today{background:url("./star_29_on.png") no-repeat center center;background-size:220px 250px}
+.evWrap .star_line_area .starLine li span.day_30.today{background:url("./star_30_on.png") no-repeat center center;background-size:220px 250px}
+.evWrap .star_line_area .starLine li span.day_31.today{background:url("./star_31_on.png") no-repeat center center;background-size:220px 250px}
+
+.evWrap .star_line_area .move_btn a {display:block;position:absolute;width:28px;height:47px;}
+.evWrap .star_line_area .move_btn a.prev {left:1px;top:130px;background:url("./l_btn_off.png") no-repeat 0 0;background-size:28px 47px;}
+.evWrap .star_line_area .move_btn a.next {right:1px;top:130px;background:url("./r_btn_off.png") no-repeat 0 0;background-size:28px 47px;}
+
+.tableBox{background-color:#1cd2a6}
+.tableBox .table_cont{position:relative;width:268px;margin:0 auto;padding-bottom:21px}
+.tableBox .table_cont table{width:268px}
+.tableBox .table_cont .table1 th{background:#117d63;text-align:center}
+.tableBox .table_cont .table1 th.rank img{width:25px;height:14px}
+.tableBox .table_cont .table1 th.id img{width:36px;height:14px}
+.tableBox .table1 th.rank,.tableBox .table1 th.id{height:29px;border-bottom:1px solid #1cd2a6}
+.tableBox .table1 th.rank, .tableBox .table1 td.rank{border-right:1px solid #1cd2a6}
+.tableBox .table1 td{height:23px;background:#a4eddb;border-bottom:1px solid #1cd2a6}
