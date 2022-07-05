@@ -1,0 +1,61 @@
+.evWrap {position:relative;width:896px;font-size:12px;}
+.evWrap .hide {position:absolute;left:1px;top:1px;width:1px;height:1px;visibility:hidden;}
+.evWrap .block {display:block; vertical-align:baseline;}
+.evWrap img {vertical-align:top;}
+
+.evWrap .game_section{position:relative;height:1495px;background:url("bg_forest.gif") no-repeat}
+.evWrap .game_section .title{position:absolute;left:0;top:0;height:408px;z-index:1}
+.evWrap .game_time_zone{height:410px;font-family:"Nanum Gothic", sans-serif;font-size:24px;line-height:28px;color:#333;font-weight:bold}
+.evWrap .game_time_zone .num{position:absolute;left:363px;top:444px;}
+.evWrap .game_time_zone .day{position:absolute;left:682px;top:444px;}
+
+.evWrap .clover_zone{position:relative;height:564px;}
+.evWrap .clover_zone .nabi_cont{}
+.evWrap .clover_zone .nabi_cont .nabi{position:absolute;}
+.evWrap .clover_zone .nabi_cont .txt{display:block;overflow:hidden;width:96px;height:79px;position:absolute;text-indent:-9999px}
+.evWrap .clover_zone .nabi_cont .nabi img{position:relative;}
+.evWrap .clover_zone .nabi_cont .nabi.nabi_01{left:96px;top:196px}
+.evWrap .clover_zone .nabi_cont .nabi.nabi_02{right:64px;top:178px}
+.evWrap .clover_zone .nabi_cont .nabi.nabi_03{left:310px;top:326px}
+.evWrap .clover_zone .nabi_cont .nabi.nabi_04{left:104px;top:454px}
+.evWrap .clover_zone .nabi_cont .nabi.nabi_05{right:96px;top:460px}
+.evWrap .clover_zone .nabi_cont .nabi_01 .txt{left:-16px;top:40px;background:url("textbox_01.png") no-repeat}
+.evWrap .clover_zone .nabi_cont .nabi_02 .txt{left:204px;top:20px;background:url("textbox_02.png") no-repeat}
+.evWrap .clover_zone .nabi_cont .nabi_03 .txt{left:216px;top:32px;background:url("textbox_03.png") no-repeat}
+.evWrap .clover_zone .nabi_cont .nabi_04 .txt{left:-36px;top:36px;background:url("textbox_04.png") no-repeat}
+.evWrap .clover_zone .nabi_cont .nabi_05 .txt{left:210px;top:-10px;background:url("textbox_05.png") no-repeat}
+
+.evWrap .result_cont {position:relative;}
+.evWrap .result_cont > div{display:block;overflow:hidden;text-indent:-9999px}
+.evWrap .result_cont .result_01{position:absolute;left:120px;top:135px;}
+.evWrap .result_cont .result_02{position:absolute;left:591px;top:141px;}
+.evWrap .result_cont .result_03{position:absolute;left:336px;top:296px;}
+.evWrap .result_cont .result_04{position:absolute;left:120px;top:391px;}
+.evWrap .result_cont .result_05{position:absolute;left:549px;top:405px;}
+.evWrap .result_cont .clover{width:250px;height:300px;background:url("clover_new.png") no-repeat}
+.evWrap .result_cont .rose{width:250px;height:300px;background:url("rose_new.png") no-repeat}
+.evWrap .result_cont .dog{width:250px;height:300px;background:url("dog_new.png") no-repeat}
+.evWrap .result_cont .rabbit{width:250px;height:300px;background:url("rabbit_new.png") no-repeat}
+.evWrap .result_cont .cat{width:250px;height:300px;background:url("cat_new.png") no-repeat}
+
+.evWrap .game_suc_zone{clear:both}
+.evWrap .suc_day{float:left;width:130px;height:174px}
+.evWrap .suc_day_01{margin:318px 0px 0px 70px}
+.evWrap .suc_day_02{margin:316px 0px 0px 30px}
+.evWrap .suc_day_03{margin:318px 0px 0px 32px}
+.evWrap .suc_day_04{margin:318px 0px 0px 30px}
+.evWrap .suc_day_05{margin:318px 0px 0px 30px}
+.evWrap .suc_day > p{display:block;overflow:hidden;width:133px;height:53px;text-indent:-9999px}
+.evWrap .suc_day p.wait{margin-top:2px;background:url("wait.png") no-repeat}
+.evWrap .suc_day p.save_300{height:52px;margin-top:2px;background:url("save_300.png") no-repeat}
+.evWrap .suc_day p.bang{margin-top:2px;background:url("bang.png") no-repeat}
+
+.evWrap .popup_zone{position:absolute;left:0px;top:0px;z-index:2}
+.evWrap .popup_zone .pop_bg{width:896px;height:1626px;background-color:#000;opacity:0.7;filter:alpha(opacity:'70')}
+.evWrap .popup_zone .pop{width:526px;height:472px;position:absolute;left:202px;top:490px;text-indent:-9999px}
+.evWrap .popup_zone .pop.clover{background:url("pop_clover.png") no-repeat}
+.evWrap .popup_zone .pop.rose{background:url("pop_rose.png") no-repeat}
+.evWrap .popup_zone .pop.dog{background:url("pop_dog.png") no-repeat}
+.evWrap .popup_zone .pop.rabbit{background:url("pop_rabbit.png") no-repeat}
+.evWrap .popup_zone .pop.cat{background:url("pop_cat.png") no-repeat}
+.evWrap .popup_zone .btn_close{display:block;overflow:hidden;width:53px;height:55px;position:absolute;left:675px;top:489px;text-indent:-9999px}
