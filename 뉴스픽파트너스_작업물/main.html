@@ -10,11 +10,13 @@
     <link rel="stylesheet" href="css/common.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script>
+        /* 유저랭킹 JS */
         function tick(){
             $('#userRnkList li:first').slideUp( function () { $(this).appendTo($('#userRnkList')).slideDown(); });
         }
         setInterval(function(){ tick () }, 3000);
-
+        
+        /* 북마크 버튼 on/off JS */
         $(function() {
             $('.bookmark img').on('click', function(){
                 $('.bookmark img').each(function(){
@@ -23,7 +25,8 @@
                 $(this).attr('src', $(this).attr('src').replace('_off.png', '_on.png'));
             });
         });
-
+        
+        /* 네비게이션 JS */
         $(document).ready(function(){
                 $("#nav_left").unbind();
                 $("#nav_left").bind("click", function(){           
