@@ -26,7 +26,13 @@
 - tool: photoshop/editplus
 - HTML/CSS/JAVASCRIPT/JQUERY
 
+> 노티플러스 근무 (2021. 01 ~ 2023. 11)
+- 뉴스픽 파트너스 페이지(web/mobile) 운영 및 유지보수
+- 뉴스픽 파트너스 DM 제작
+- 스탬플리 신규서비스 페이지 제작 프로젝트 참여, 마크업 및 운영/유지보수
+- tool: figma/soucetree/vs code
+- HTML5/CSS3/Bootstrap/Jquery
+
 ### 포트폴리오 확인 관련 내용 공유
 - 롯데면세점 HTML 파일 경우 [이벤트 디자인팀] 혹은 [evWrap]로 검색 후 소스부터 리뷰 바랍니다.
-- 뉴스픽 파트너스 메인 페이지 제작
-  - 유저랭킹/네이게이션 JS 롤링 이벤트 사용
+
