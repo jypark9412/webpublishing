@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ko">
+<%-include('inc/header.html')%>
+<%-include('inc/widget.html')%>
+
+<body>
+  <header class="container-sm g-3">
+    <div class="header-wrap d-grid a-center justify-content-between">
+      <a class="link-back" href="" title="뒤로가기"><i class="icon-arrow-left"></i><span class="text-indent">뒤로가기</span></a>
+      <h2 class="title-sm">푸시 알림 설정</h2>
+    </div>
+  </header>
+  <div class="info-wrap">
+    <div class="list-mypage-wrap">
+      <ul class="list-alarm row">
+        <li>
+          <div class="d-flex a-center j-between">
+            <div>
+              <p class="txt">스탬프 적립 알림</p>
+            </div>
+            <div class="form-check form-switch">
+              <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckChecked" checked>
+            </div>
+          </div>
+        </li>
+        <!-- [D] 숨김 처리 : d-none -->
+        <li class="d-none">
+          <div class="d-flex a-center j-between">
+            <div>
+              <p class="txt">스탬프 소멸 예정 알림</p>
+            </div>
+            <div class="form-check form-switch">
+              <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckChecked" checked>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="d-flex a-center j-between">
+            <div>
+              <p class="txt">기프티콘 발송 알림</p>
+            </div>
+            <div class="form-check form-switch">
+              <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckChecked" checked>
+            </div>
+          </div>
+        </li>
+      </ul>
+      <ul class="list-alarm row">
+        <li>
+          <div class="d-flex a-center j-between">
+            <div>
+              <p class="txt">마케팅 정보 알림</p>
+              <span class="sub-txt text-muted">이벤트,혜택 등의 정보를 알려드려요</span>
+            </div>
+            <div class="form-check form-switch">
+              <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckChecked" >
+            </div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  
+</body>
+
+</html>

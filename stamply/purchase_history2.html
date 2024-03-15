@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="ko">
+<%-include('inc/header.html')%>
+
+<body>
+  <header class="container-sm g-3">
+    <div class="header-wrap d-grid a-center justify-content-between">
+      <a class="link-back" href="" title="뒤로가기"><i class="icon-arrow-left"></i><span class="text-indent">뒤로가기</span></a>
+      <h2 class="title-sm">구매 내역</h2>
+      <!-- <a class="btn-transparent" href="" title="안내">안내</a> -->
+    </div>
+  </header>
+  <div class="container-sm">
+    <!-- [D] NP-2400 문구 변경 -->
+    <div class="list-info body-md text-muted rounded mt-12">
+      최근 30일간의 내역을 볼 수 있으며, 당일 구매/취소 금액은 다음 날 오후 6시 이후에 확인할 수 있어요. 가맹 쇼핑몰의 정책에 따라 구매 금액에 미반영되는 경우 내역은 사라져요. 반영은 시스템 사정에 따라 지연될 수 있어요.
+    </div>
+    <div class="stamp-wrap mt-4">
+      <div class="stamp-report">
+        <div>
+          <div>스탬프 적립 가능 총액 <i class="icon-info" data-role="tooltip"></i>
+            <!-- tooltip : visible -->
+            <div class="tooltip visible">
+              <div class="d-flex">
+                <div class="flex-1">
+                  <p class="w-100 pb-2">회원님의 구매 금액에서 구매 취소 금액을 차감한 실질 구매 금액입니다.</p>
+                  <ul class="flex-fill text-gray">
+                    <li class="d-flex">스탬프 적립 가능 총액이 30만원 이하인 경우, 스탬프 적립/전환 이후 잔여 금액은 익일로 이월되어 이후 구매한 금액과 합산되며, 30만원을 초과한 경우엔 잔여 금액은 이월되지 않습니다.</li>
+                    <li class="d-flex">잔여 금액은 최대 30일까지만 이월됩니다.</li>
+                    <li class="d-flex">금액이 음수인 경우,익일로 구매 취소 금액이 이월되며 구매 발생 시 해당 금액만큼 차감됩니다.</li>
+                  </ul>
+                </div>
+                <button type="button" class="btn-close btn-close-white"><span class="text-indent">툴팁 닫기</span></button>
+              </div>
+            </div>
+            <!-- //tooltip -->
+          </div>
+          <div class="price display-lg my-1">
+            <!-- 구매 내역 링크 없음 -->
+            <span>120,870</span>
+          </div>
+        </div>
+        <div>
+          <div class="d-flex j-between body-md mt-3">
+            <div>2/6 구매 총액 <i class="icon-info" data-role="tooltip"></i>
+              <!-- tooltip : visible -->
+              <div class="tooltip ">
+                <div class="d-flex">
+                  <p class="w-100">회원님이 당일 쇼핑몰에서 구매한 총 금액입니다. 단, 안내 내용과 같이 일부 상품 (기프트카드, 여행 등)의 경우에는 제외됩니다.</p>
+                  <button type="button" class="btn-close btn-close-white"><span class="text-indent">툴팁
+                      닫기</span></button>
+                </div>
+              </div>
+              <!-- //tooltip -->
+            </div>
+            <div class="price">
+              <span>1,200,200</span>
+            </div>
+          </div>
+          <div class="d-flex j-between body-md mt-2">
+            <div>구매 취소 금액 <i class="icon-info" data-role="tooltip"></i>
+              <!-- tooltip : visible -->
+              <div class="tooltip ">
+                <div class="d-flex">
+                  <p class="w-100">구매 취소가 발생한 금액으로 당일 구매 취소 총액에 전일 이월 구매 취소 금액을 합산한 잔액입니다.</p>
+                  <button type="button" class="btn-close btn-close-white"><span class="text-indent">툴팁
+                      닫기</span></button>
+                </div>
+              </div>
+              <!-- //tooltip -->
+            </div>
+            <div class="price">
+              <span>30,380</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 구매 내역 리스트 -->
+    <div class="list-detail-area mt-4">
+      <!-- 구매 내역 없는 경우 -->
+      <div class="list-empty">
+        구매 내역이 없어요.
+      </div>
+
+      <ul class="list-detail d-flex flex-column">
+        <!-- 구매 내역 있는 경우 : purchased -->
+        <li class="col purchased">
+          <div class="d-grid">
+            <div class="state">
+              <span class="text-indent">구매</span>
+            </div>
+            <div class="info d-flex">
+              <p class="fw-700">55,360원</p>
+              <div class="item detail w-100">
+                <p class="text-overflow1">삐아 라스트
+                  벨벳 틴트삐아 라스트 벨벳 틴트삐아 라스트 벨벳 틴트삐아 라스트 벨벳 틴트삐아 라스트 벨벳 틴트</p>
+                <p class="date">2023.02.01. 13:48:54</p>
+              </div>
+            </div>
+          </div>
+        </li>
+        <!-- 구매 취소인 경우 : canceled -->
+        <li class="col canceled">
+          <div class="d-grid">
+            <div class="state">
+              <span class="text-indent">구매 취소</span>
+            </div>
+            <div class="info d-flex">
+              <p class="fw-700">-55,360원</p>
+              <div class="item detail w-100">
+                <p class="text-overflow1">삐아 라스트</p>
+                <p class="date">2023.02.01. 13:48:54</p>
+              </div>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</body>
+
+</html>

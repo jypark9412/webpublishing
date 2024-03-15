@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<%-include('inc/header.html')%>
+	
+<body>
+  <header class="container-sm g-3">
+    <div class="header-wrap d-grid a-center justify-content-between">
+      <a class="link-back" href="" title="뒤로가기"><i class="icon-arrow-left"></i><span class="text-indent">뒤로가기</span></a>
+      <h2 class="title-sm">당첨 내역</h2>
+      <a class="btn-transparent" href="" title="안내">안내</a>
+    </div>
+  </header>
+  <div class="container-sm">
+    <div class="list-info body-md text-muted rounded mt-12">
+      경품은 당첨 시 등록되었던 휴대전화 번호로 영업일 기준 3일 이내 발송됩니다.
+    </div>
+    <!-- 당첨 내역 리스트 -->
+    <div class="list-detail-area mt-4">
+
+      <!-- 당첨 내역 있는 경우 -->
+      <ul class="list-roulette-result d-flex flex-column">
+
+        <li class="col">
+          <!-- 발송 예정 -->
+          <div class="d-flex justify-content-center">
+            <div class="item-wrap d-flex a-center">
+              <!-- NP-2261 썸네일 추가 -->
+              <div class="thumb">
+                <img src="/static/images/gift_starbucks_noname.png"/>
+              </div>
+              <!-- //NP-2261 썸네일 추가 -->
+              <div class="item w-75">
+                <p class="detail text-overflow1 text-gray me-4">스타벅스</p>
+                <p class="text body-md text-overflow1 me-4">아메리카노 T</p>
+                <p class="date">MM.DD.</p>
+              </div>
+            </div>
+            <div class="body-md state text-primary">발송 예정</div>
+          </div>
+        </li>
+        
+        <li class="col">
+          <!-- 발송 완료 -->
+          <div class="d-flex justify-content-center">
+            <div class="item-wrap d-flex a-center">
+              <div class="thumb">
+                <img src="/static/images/gift_back_noname.png"/>
+              </div>
+              <div class="item w-75">
+                <p class="detail text-overflow1 text-gray me-4">빽다방</p>
+                <p class="text body-md text-overflow1 me-4">아메리카노 ICED</p>
+                <p class="date">MM.DD.</p>
+              </div>
+            </div>
+            <div class="body-md state text-secondary">발송 완료</div>
+          </div>
+        </li>
+
+        <li class="col">
+          <!-- 발송 취소 : opacity-50 -->
+          <div class="d-flex justify-content-center opacity-50">
+            <div class="item-wrap d-flex a-center">
+              <div class="thumb">
+                <img src="/static/images/gift_jaws_noname.png"/>
+              </div>
+              <div class="item w-75">
+                <p class="detail text-overflow1 text-gray me-4">죠스떡볶이</p>
+                <p class="text body-md text-overflow1 me-4">죠스떡볶이</p>
+                <p class="date">MM.DD.</p>
+              </div>
+            </div>
+            <div class="body-md state">발송 취소</div>
+          </div>
+        </li>
+
+        <li class="col">
+          <div class="d-flex justify-content-center">
+            <div class="item-wrap d-flex a-center">
+              <div class="thumb">
+                <img src="/static/images/gift_starbucks2_noname.png"/>
+              </div>
+              <div class="item w-75">
+                <p class="detail text-overflow1 text-gray me-4">스타벅스</p>
+                <p class="text body-md text-overflow1 me-4">아메리카노 Tx2</p>
+                <p class="date">MM.DD.</p>
+              </div>
+            </div>
+            <div class="body-md state text-primary">발송 예정</div>
+          </div>
+        </li>
+        <li class="col">
+          <div class="d-flex justify-content-center">
+            <div class="item-wrap d-flex a-center">
+              <div class="thumb">
+                <img src="/static/images/gift_mc_noname.png"/>
+              </div>
+              <div class="item w-75">
+                <p class="detail text-overflow1 text-gray me-4">맥도날드</p>
+                <p class="text body-md text-overflow1 me-4">슈슈버거세트</p>
+                <p class="date">MM.DD.</p>
+              </div>
+            </div>
+            <div class="body-md state text-primary">발송 예정</div>
+          </div>
+        </li>
+        <li class="col">
+          <div class="d-flex justify-content-center">
+            <div class="item-wrap d-flex a-center">
+              <div class="thumb">
+                <img src="/static/images/gift_ediya_noname.png"/>
+              </div>
+              <div class="item w-75">
+                <p class="detail text-overflow1 text-gray me-4">이디야</p>
+                <p class="text body-md text-overflow1 me-4">떠먹는 티라미수</p>
+                <p class="date">MM.DD.</p>
+              </div>
+            </div>
+            <div class="body-md state text-primary">발송 예정</div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</body>
+</html>

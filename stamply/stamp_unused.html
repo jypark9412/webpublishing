@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ko">
+<%-include('inc/header.html')%>
+
+<body>
+  <header class="container-sm g-3">
+    <div class="header-wrap d-grid a-center justify-content-between">
+      <a class="link-back" href="" title="뒤로가기"><i class="icon-arrow-left"></i><span class="text-indent">뒤로가기</span></a>
+      <h2 class="title-sm">소멸 예정 스탬프 내역</h2>
+    </div>
+  </header>
+  <div class="container-sm">
+    <div class="list-info body-md text-muted rounded">
+      스탬프는 적립일로부터 6개월 동안 유효하며, 소멸 일자 빠른 순으로 최대 30개의 내역만 노출됩니다. 적립 일자가 빠른 순으로 먼저 사용되며 유효기간 경과 시에는 자동으로 소멸됩니다.
+    </div>
+    
+    <!-- 스탬프 소멸 예정 내역 리스트 -->
+    <div class="list-detail-area">
+      <!-- 스탬프 소멸 예정 내역 없는 경우 -->
+      <div class="list-empty mt-4"> 
+        소멸 예정인 스탬프가 없어요 👀
+      </div>
+
+      <!-- 스탬프 소멸 예정 내역 있는 경우 -->
+      <div class="list-stamp mt-4 body-md">
+        <div class="list-head d-flex pb-3 text-muted">
+          <div class="w-100 text-center">소멸 일자</div>
+          <div class="w-100 text-center">소멸 스탬프</div>
+        </div>
+
+        <ul class="list-body text-gray">
+          <li>
+            <div class="d-flex py-3">
+              <p class="w-100 text-center">2023-09-02</p>
+              <p class="w-100 text-center"><span>3</span>개</p>
+            </div>
+          </li>
+          <li>
+            <div class="d-flex py-3">
+              <p class="w-100 text-center">2024-02-02</p>
+              <p class="w-100 text-center"><span>10</span>개</p>
+            </div>
+          </li>
+          <li>
+            <div class="d-flex py-3">
+              <p class="w-100 text-center">2024-08-02</p>
+              <p class="w-100 text-center"><span>1</span>개</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

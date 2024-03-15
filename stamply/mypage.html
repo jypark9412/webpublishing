@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<%-include('inc/header.html')%>
+	<%-include('inc/widget.html')%>
+
+<body>
+  <header class="container-sm g-3">
+    <div class="header-wrap d-grid a-center justify-content-between">
+      <a class="link-back" href="" title="뒤로가기"><i class="icon-arrow-left"></i><span class="text-indent">뒤로가기</span></a>
+      <h2 class="title-sm">마이페이지</h2>
+      <a class="btn-setting" href="" title="설정"><i class="icon-settings"></i><span class="text-indent">설정</span>
+      </a>
+    </div>
+  </header>
+  <div class="info-wrap">
+    <div class="myinfo-area d-flex flex-column a-center">
+      <div class="user title-md">홍길동님</div>
+      <div class="number-area d-flex a-center">
+        <p class="num body-md">000-0000-0000</p>
+        <a href="" target="_blank" class="btn btn-change ms-2">
+          <span class="detail">변경</span>
+        </a>
+      </div>
+    </div>
+    <div class="list-mypage-wrap">
+      <ul class="list-mypage row">
+        <li>
+          <a href="" title="구매 내역 바로가기">
+            <div class="history d-flex a-center">
+              <div class="d-flex a-center">
+                <i class="icon-shop-bag"></i>
+                <p class="ms-2">구매 내역</p>
+              </div>
+              <i class="icon-arrow-left-gr"></i>
+            </div>
+          </a>
+        </li>
+        <li>
+          <a href="" title="스탬프 내역 바로가기">
+            <div class="history d-flex a-center">
+              <div class="d-flex a-center">
+                <i class="icon-stamp-low"></i>
+                <p class="ms-2">스탬프 내역</p>
+              </div>
+              <i class="icon-arrow-left-gr"></i>
+            </div>
+          </a>
+        </li>
+        <li>
+          <a href="" title="당첨 내역 바로가기">
+            <div class="history d-flex a-center">
+              <div class="d-flex a-center">
+                <i class="icon-ta-da"></i>
+                <p class="ms-2">당첨 내역</p>
+              </div>
+              <i class="icon-arrow-left-gr"></i>
+            </div>
+          </a>
+        </li>
+        <li class="last">
+          <a href="" title="문의하기 바로가기">
+            <div class="history d-flex a-center">
+              <div class="d-flex a-center">
+                <i class="icon-chat"></i>
+                <p class="ms-2">문의하기</p>
+              </div>
+              <i class="icon-arrow-left-gr"></i>
+            </div>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <button type="button" class="btn btn-reset">로그아웃</button>
+  </div>
+  <%-include('inc/footer.html')%>
+</body>
+</html>

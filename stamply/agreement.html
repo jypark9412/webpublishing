@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ko">
+<%-include('inc/header.html')%>
+<body>
+  <header class="container-sm g-3">
+    <div class="header-wrap d-grid a-center justify-content-between">
+      <a class="link-back" href="" title="뒤로가기"><i class="icon-arrow-left"></i><span class="text-indent">뒤로가기</span></a>
+    </div>
+  </header>
+  <div class="container-sm">
+    <div class="content-agreement">
+      <h3 class="title-xl text-center">스탬플리 이용을 위해<br>약관에 동의해 주세요.</h3>
+      <div class="agreement-chk-list">
+        <!-- 약관 동의 -->
+        <div class="mb-5">
+          <ul class="list-agreement text-left">
+            <li class="checkbox-all">
+              <div class="checkbox-primary">
+                <input type="checkbox" name="agreement" id="chk-all">
+                <label for="chk-all" class="body-lx fw-700">네, 모두 동의합니다.</label>
+              </div>
+            </li>
+            <li>
+              <div class="checkbox-primary">
+                <input type="checkbox" name="agreement" id="chk-1" class="chk-sub" checked>
+                <label for="chk-1" class="body-md"><span class="me-1">&#40;필수&#41;</span>만 14세 이상입니다.</label>
+              </div>
+            </li>
+            <li>
+              <div class="checkbox-primary">
+                <input type="checkbox" name="agreement" id="chk-2" class="chk-sub">
+                <label for="chk-2" class="body-md"><span class="me-1">&#40;필수&#41;</span>서비스 이용 약관 동의</label>
+              </div>
+              <div>
+                <a href="servicePolicy.html" target="_blank" class="text-decoration-underline">보기</a>
+              </div>
+            </li>
+            <li>
+              <div class="checkbox-primary">
+                <input type="checkbox" name="agreement" id="chk-3" class="chk-sub">
+                <label for="chk-3" class="body-md"><span class="me-1">&#40;필수&#41;</span>개인정보 수집 및 이용 동의</label>
+              </div>
+              <div>
+                <a href="privacyPolicy.html" target="_blank" class="text-decoration-underline">보기</a>
+              </div>
+            </li>
+            <li>
+              <div class="checkbox-primary">
+                <input type="checkbox" name="agreement" id="chk-4" class="chk-sub">
+                <label for="chk-4" class="body-md"><span class="me-1">&#40;선택&#41;</span>마케팅 정보 알림 수신 동의</label>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <!-- //약관 동의 -->
+        <button type="button" class="btn btn-primary w-100" disabled>다음</button>
+      </div>
+    </div>
+  </div>
+  <script>
+    //전체 체크 클릭 시
+    $("#chk-all").click(function(){
+      if($(this).is(":checked")){ 
+        //모든 체크박스 체크
+        $(".chk-sub").attr("checked", true);
+        //버튼 disabled false
+        $('.btn-primary').attr('disabled',false);
+          
+      }else{ 
+        //모든 체크박스 체크 해제
+        $(".chk-sub").attr("checked", false);
+        //버튼 disabled true
+        $('.btn-primary').attr('disabled',true);
+      }
+    });
+  </script>
+</body>
+
+</html>
