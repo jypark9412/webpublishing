@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ko">
+<%-include('inc/header.html')%>
+
+<body>
+  <header class="container-sm g-3">
+    <div class="header-wrap d-grid a-center justify-content-between">
+      <a class="link-back" href="" title="뒤로가기"><i class="icon-arrow-left"></i><span class="text-indent">뒤로가기</span></a>
+      <h2 class="title-sm">관리</h2>
+    </div>
+  </header>
+  <div class="info-wrap">
+    <div class="list-mypage-wrap">
+      <ul class="list-mypage row">
+        <li>
+          <a href="" title="푸시 알림 바로가기" data-bs-dismiss="modal" onclick="$('#pushModal1').modal('show');">
+            <div class="history d-flex a-center">
+              <div class="d-flex a-center">
+                <p class="ms-2">푸시 알림 설정</p>
+              </div>
+              <i class="icon-arrow-left-gr"></i>
+            </div>
+          </a>
+        </li>
+        <li>
+          <a href="" title="서비스 이용약관 바로가기">
+            <div class="history d-flex a-center">
+              <div class="d-flex a-center">
+                <p class="ms-2">서비스 이용약관</p>
+              </div>
+              <i class="icon-arrow-left-gr"></i>
+            </div>
+          </a>
+        </li>
+        <li>
+          <a href="" title="개인정보 처리방침 바로가기">
+            <div class="history d-flex a-center">
+              <div class="d-flex a-center">
+                <p class="ms-2 fw-bold">개인정보 처리방침</p>
+              </div>
+              <i class="icon-arrow-left-gr"></i>
+            </div>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <a href="" title="회원탈퇴 바로가기" class="btn btn-reset">회원 탈퇴</a>
+  </div>
+
+  <!-- 푸시 알림 팝업 : 허용 방법 안내  -->
+  <div class="modal fade pushModal" id="pushModal1" tabindex="-1" data-bs-backdrop="static" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered flex-column j-center">
+      <div class="modal-content">
+        <div class="bg-modal">
+          <div class="modal-header">
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close">
+              <span class="text-indent">닫기</span>
+            </button>
+          </div>
+          <div class="modal-body px-4 pb-6">
+            <div class="d-flex flex-column">
+              <div class="title body-xl mb-3">푸시 알림 상태 변경은 아래 방법에 따라 직접 설정이 필요해요</div>
+              <ol class="modal-list detail text-gray">
+                <li>Android 휴대전화 또는 태블릿에서 Chrome 앱을 엽니다.</li>
+                <li>주소 표시줄 오른쪽에 있는 더보기 버튼을 탭합니다.</li>
+                <li>설정 메뉴를 탭합니다.</li>
+                <li>고급 - 사이트 설정 &gt; 알림을 탭합니다.</li>
+                <li>https://stamply.kr 을 탭합니다.</li>
+                <li>알림 받기를 탭하여 알림을 허용합니다.</li>
+              </ol>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 푸시 알림 팝업 : 해제 방법 안내  -->
+  <div class="modal fade pushModal" id="pushModal2" tabindex="-1" data-bs-backdrop="static" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered flex-column j-center">
+      <div class="modal-content">
+        <div class="bg-modal">
+          <div class="modal-header">
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close">
+              <span class="text-indent">닫기</span>
+            </button>
+          </div>
+          <div class="modal-body px-4 pb-6">
+            <div class="d-flex flex-column">
+              <div class="title body-xl mb-3">푸시 알림 상태 변경은 아래 방법에 따라 직접 설정이 필요해요</div>
+              <ol class="modal-list detail text-gray">
+                <li>Android 휴대전화 또는 태블릿에서 Chrome 앱을 엽니다.</li>
+                <li>주소 표시줄 오른쪽에 있는 더보기 버튼을 탭합니다.</li>
+                <li>설정 메뉴를 탭합니다.</li>
+                <li>고급 - 사이트 설정 &gt; 알림을 탭합니다.</li>
+                <li>https://stamply.kr 을 탭합니다.</li>
+                <li>알림 받기를 탭하여 알림을 차단합니다.</li>
+              </ol>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <%-include('inc/footer.html')%>
+</body>
+
+</html>

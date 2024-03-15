@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ko">
+<%-include('inc/header.html')%>
+<body>
+  <div class="login-wrap offset-mb-xl">
+    <div class="img-intro">
+      <img src="/static/images/this_stamply_new.jpg" alt="스탬플리 소개 이미지"/>
+    </div>
+    <!-- <div class="fixed-bottom p-3 dim d-none">
+      <div class="tooltip-wrap">
+        <p class="txt"><span class="text-secondary">3만원 상당</span>의 스탬프 적립 ! 🎉</p>
+      </div>
+      <button type="button" class="btn btn-kakao w-100 mb-1 fw-600"><i class="icon-kakao me-2"></i>카카오로 빠르게 시작하기</button>
+    </div> -->
+
+    <%-include('inc/footer.html')%>
+
+    <!-- 마크업 변경 및 클래스 추가 : fixed-social-bottom -->
+    <div class="fixed-bottom fixed-social-bottom">
+      <div class="dim"></div>
+      <div class="fixed-social">
+        <!-- 영역 숨기기 : d-none -->
+        <div class="content-social-login ">
+          <div class="social-member">
+            <button type="button" class="btn-login btn-kakao w-100 fw-600"><i class="icon-kakao"></i>카카오로 계속하기</button>
+            <button type="button" class="btn-login btn-apple w-100 fw-600"><i class="icon-apple"></i>Apple로 계속하기</button>
+            <!-- 미사용 버튼 : d-none -->
+            <button type="button" class="btn-login btn-google w-100 fw-600 d-none"><i class="icon-google"></i>Google로 계속하기</button>
+          </div>
+          
+          <a href="" class="btn btn-another w-100 mt-2"><span class="text-gray detail">다른 방법으로 계속하기</span></a>
+        </div>
+
+        <!-- 다른 방법으로 계속하기 -->
+        <!-- 영역 숨기기 : d-none -->
+        <div class="content-another-login d-none">
+          <div class="d-flex flex-column sticky-bottom">
+            <button type="button" class="btn btn-close btn-close-white">
+              <span class="text-indent">닫기</span>
+            </button>
+            <h3 class="title-sm text-center">다른 방법으로 계속하기</h3>
+            <div class="social-member">
+              <!-- 미사용 버튼 : d-none -->
+              <button type="button" class="btn-login btn-apple w-100 mb-1 fw-600 d-none"><i class="icon-apple"></i>Apple로 계속하기</button>
+              <button type="button" class="btn-login btn-google w-100 mb-1 fw-600"><i class="icon-google"></i>Google로 계속하기</button>
+            </div>
+            <button type="button" class="btn btn-sm my-2 underline detail text-gray">Guest로 둘러보기</button>
+            <p class="text-center fs-xs text-gray-500">서비스 이용은 가능하나 구매 적립 및 경품 지급은 회원만 가능합니다.</p>
+          </div>
+        </div>
+        <!-- //다른 방법으로 계속하기 -->
+      </div>
+    </div>
+    <!-- //마크업 변경 -->
+  </div>
+
+  <script>
+    $(document).ready(function () {
+      $(".dim").hide();
+
+      //다른 방법으로 계속하기 클릭 시
+      $(".btn-another").click(function () {
+        $(".content-another-login").removeClass("d-none");
+        $(".dim").show();
+        $(".content-social-login").addClass("d-none");
+        return false
+      });
+
+      //닫기 클릭 시
+      $(".content-another-login .btn-close").click(function () {
+        $(".dim").hide();
+        $(".content-another-login").addClass("d-none");
+        $(".content-social-login").removeClass("d-none");
+        return false
+      });
+    });
+  </script>
+</body>
+
+</html>

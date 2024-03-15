@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<%-include('inc/header.html')%>
+	<%-include('inc/widget.html')%>
+	
+<body>
+  <header>
+    <div class="header-wrap d-grid a-center justify-content-between">
+      <a class="link-back" href="" title="뒤로가기"><i class="icon-arrow-left"></i><span class="text-indent">뒤로가기</span></a>
+    </div>
+  </header>
+  <div class="prize-wrap">
+    <div class="prize-container">
+      <div>
+        <div class="prize-product bg-white rounded-4">
+          <!-- 상품 영역 -->
+          <div class="product-info d-flex flex-column a-center">
+            <div class="info text-center">
+              <p class="text-gray">스타벅스</p>
+              <div class="title-md">'시원하게 함께' 아이스 카페 아메리카노 T 2잔</div>
+            </div>
+            <div class="thumb">
+              <!-- 상품 이미지 -->
+              <img src="https://biz.giftishow.com/Resource/goods/2022/G00001284067/G00001284067.jpg" />
+              
+              <div class="d-day fw-700 rounded">7일 남음</div>
+    
+              <!-- 로딩 -->
+              <div class="spinner-border text-primary" role="status"></div>
+            </div>
+          </div>
+        </div>
+  
+        <div class="prize-barcode d-flex flex-column a-center bg-white rounded-4">
+          <!-- 바코드 영역 -->
+          <div class="barcode mt-2">
+            <!-- 바코드 -->
+            <img src="/static/images/prize/img_bar_code.png" />
+            <!-- [D] 핀코드 텍스트 추가 -->
+            <p class="pin-num">4321 1234 5678 91011</p>
+          </div>
+          <div class="btn-group-xxs prize-btn-area d-flex a-center mt-2">
+            <button type="button" class="btn btn-xxs btn-gray btn-copy">
+              <i class="icon-copy"></i>번호 복사
+            </button>
+            <button type="button" class="btn btn-xxs btn-gray btn-inquiry">
+              <i class="icon-refer"></i>상태 조회
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+    <div class="prize-article">
+      <div class="tlt text-gray">💬 상품 유의사항을 확인해 주세요!</div>
+        <div class="text-muted body-md">
+          <!-- 유의사항 설명 영역 -->
+          [상품설명]
+          스타벅스의 깔끔한 맛을 자랑하는 커피로, 스타벅스 
+          파트너들이 가장 좋아하는 커피입니다.<br>
+          [유의사항]
+          해당 쿠폰은 일부 점포에서는 취급하지 않는 상품일 수 
+          있습니다.
+          상기 이미지는 연출된 것으로 실제와 다를 수 있습니다.
+          본 상품은 매장 재고 상황에 따라 동일 상품으로 교환이
+          불가능 할 수 있습니다.
+        </div>
+    </div>
+    
+    <div class="prize-article">
+      <ul class="d-flex flex-column">
+        <li class="d-flex j-between a-center text-muted">
+          <span>유효기간</span>
+          <span class="text-gray">2023-03-14</span>
+        </li>
+        <li class="d-flex j-between a-center text-muted">
+          <span>교환처</span>
+          <span class="text-gray">스타벅스</span>
+        </li>
+        <li class="d-flex j-between a-center text-muted">
+          <span>상품 공급자</span>
+          <span class="text-gray">주식회사 케이티알파</span>
+        </li>
+        <li class="d-flex j-between a-center text-muted">
+          <span>상품 사업자</span>
+          <span class="text-gray">(주)노티플러스</span>
+        </li>
+      </ul>
+    </div>
+  </div>
+</body>
+</html>

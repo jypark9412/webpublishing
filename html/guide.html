@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<%-include('inc/header.html')%>
+
+<body>
+  <header class="container-sm g-3">
+    <div class="header-wrap d-grid a-center justify-content-between">
+      <a class="link-back" href="" title="뒤로가기"><i class="icon-arrow-left"></i><span class="text-indent">뒤로가기</span></a>
+      <h2 class="title-sm">이용 가이드</h2>
+    </div>
+  </header>
+  <div class="container-sm">
+    <div class="use-guide-wrap">
+      <ol class="use-guide-list d-grid">
+        <li class="info">
+          <div class="d-flex flex-column">
+            <p class="lbl-step text-center"><span class="text-indent">STEP 1</span></p>
+            <h4 class="title-sm text-center mt-3">스탬플리를 경유하여 <p class="text-secondary">쇼핑몰로 이동 후 평소처럼 구매하세요!</p></h4>
+            <img src="/static/images/img_bag.png" alt="가이드 이미지" class="img-guide">
+            <ul class="use-list body-md">
+              <li class="mb-3">
+                <div class="d-flex">
+                  <span>🛍</span>
+                  <p class="flex-fill">
+                    <span class="fw-bold">원하는 쇼핑몰로 즉시 이동</span>하거나, 상품을 검색하여 상품페이지로 이동할 수 있어요.
+                  </p>
+                </div>
+              </li>
+              <li class="mb-3">
+                <div class="d-flex">
+                  <span>🔍</span>
+                  <p class="flex-fill">쇼핑몰로 이동하여 검색 후 구매도 가능해요.</p>
+                </div>
+              </li>
+              <li class="mb-3">
+                <div class="d-flex">
+                  <span>🛒</span>
+                  <p class="flex-fill">
+                    <span class="fw-bold">스탬플리를 경유하여 장바구니 담기 및 결제까지</span> 한번에 완료된 경우만 인정돼요.
+                  </p>
+                </div>
+              </li>
+              <li>
+                <div class="d-flex">
+                  <span>🚫</span>
+                  <p class="flex-fill">
+                    다른 가격비교 사이트 (네이버 지식 쇼핑, 다나와 등)가 동일한 브라우저에 열려있으면 인정되지 않을 수 있어요.
+                  </p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </li>
+        <li class="info">
+          <div class="d-flex flex-column">
+            <p class="lbl-step text-center"><span class="text-indent">STEP 2</span></p>
+            <h4 class="title-sm text-center mt-3">구매한 금액을 모두 더해<br> 3만원 이상이 되면 <p class="text-secondary">다음 날 스탬프가 적립돼요.</p></h4> <!-- [D] NP-1135 -->
+            <img src="/static/images/img_card.png" alt="가이드 이미지" class="img-guide">
+            <ul class="use-list body-md">
+              <li class="mb-3">
+                <div class="d-flex">
+                  <span>👍</span>
+                  <!-- [D] NP-1256 -->
+                  <p class="flex-fill">
+                    스탬프는 <span class="fw-bold">3만원당 1개씩 적립</span>돼요. <br>(예시 : 6만원 구매 시, 2개 적립)
+                  </p>
+                </div>
+              </li>
+              <li class="mb-3">
+                <div class="d-flex">
+                  <span>🙌</span>
+                  <p class="flex-fill">하루 최대 10개까지만 적립돼요.</p>
+                </div>
+              </li>
+              <li>
+                <div class="d-flex">
+                  <span>💳</span>
+                  <p class="flex-fill">기프트카드, 여행 등 가맹 쇼핑몰 정책에 따라 포함되지 않은 상품은 구매하여도 적립이 되지 않으며, 자세한 내용은 스탬프 내역 &gt; 안내 페이지를 확인해 주세요.</p> <!-- [D] NP-2400 문구 변경 -->
+                </div>
+              </li>
+            </ul>
+          </div>
+        </li>
+        <li class="info">
+          <div class="d-flex flex-column">
+            <p class="lbl-step text-center"><span class="text-indent">STEP 3</span></p>
+            <h4 class="title-sm text-center mt-3">스탬프가 10개 적립되면 <p class="text-secondary">룰렛 참여하고 경품 받아가세요!</p></h4>
+            <img src="/static/images/img_gift.png" alt="가이드 이미지" class="img-guide">
+            <ul class="use-list body-md">
+              <li class="mb-3">
+                <div class="d-flex">
+                  <span>🎉</span>
+                  <p class="flex-fill">당첨된 <span class="fw-bold">경품은 등록된 휴대전화 번호로 발송</span>돼요.</p>
+                </div>
+              </li>
+              <li>
+                <div class="d-flex">
+                  <span>📃</span>
+                  <p class="flex-fill">룰렛 상품은 회사 사정에 따라 사전 고지 없이 변경될 수 있습니다.</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </li>
+      </ol>
+    </div>
+  </div>
+</body>

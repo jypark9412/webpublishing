@@ -1,0 +1,712 @@
+<!DOCTYPE html>
+<html lang="ko">
+<%-include('inc/header.html')%>
+<%-include('inc/widget.html')%>
+
+<body>
+  <header>
+    <%-include('inc/head.html')%>
+  </header>
+  <div class="container-sm input-search-area py-2">
+    <div class="input-button-wrap">
+      <button type="button" onclick="javascript:window.open('search_list.html', '_blank');" class="btn btn-search d-flex a-center">
+        <span class="body-md">원하는 상품을 검색해 보세요!</span>
+      </button>
+    </div>
+  </div>
+  <main class="container-sm">
+    <div class="main-wrap">
+      <div class="banner-area mt-4" style="display: none">
+        <div class="banner-list">
+          <div class="banner banner1 fadeInLeft">
+            <a href="" class="btn-banner">
+              <img src="/static/images/img_mission_app.png" alt="바로가기 앱 설치하고 스탬프 1개 받기">
+            </a>
+          </div>
+          <div class="banner banner2 fadeInLeft delay-1">
+            <a href="" class="btn-banner">
+              <img src="/static/images/img_mission_push.png" alt="푸시 알림 허용하고 스탬프 1개 받기">
+            </a>
+          </div>
+        </div>
+      </div>
+      <script>
+        // 배너 모션
+        $(document).ready(function () {
+          $('.btn-banner').on("click", function () {
+            var num = $(".btn-banner").index(this);
+
+            $('.banner' + (num + 1)).addClass('fadeOutLeft');
+            $('.banner' + (num + 1)).removeClass('fadeInLeft');
+            setTimeout(function () {
+              $('.banner' + (num + 1)).hide();
+            }, 600);
+            return false;
+          })
+        })
+      </script>
+      <div class="stamp-wrap mt-4">
+        <!-- 스탬프 적립 가능 총액 -->
+        <div class="stamp-report">
+          <div>
+            <div>스탬프 적립 가능 총액 <i class="icon-info" data-role="tooltip"></i></div>
+            <!-- tooltip : visible -->
+            <div class="tooltip ">
+              <div class="d-flex">
+                <div class="flex-1">
+                  <p class="w-100 pb-2">회원님의 구매 금액에서 구매 취소 금액을 차감한 실질 구매 금액입니다.</p>
+                  <ul class="flex-fill text-gray">
+                    <li class="d-flex">스탬프 적립 가능 총액이 30만원 이하인 경우, 스탬프 적립/전환 이후 잔여 금액은 익일로 이월되어 이후 구매한 금액과 합산되며, 30만원을 초과한 경우엔 잔여 금액은 이월되지 않습니다.</li>
+                    <li class="d-flex">잔여 금액은 최대 30일까지만 이월됩니다.</li>
+                    <li class="d-flex">금액이 음수인 경우,익일로 구매 취소 금액이 이월되며 구매 발생 시 해당 금액만큼 차감됩니다.</li>
+                  </ul>
+                </div>
+                <button type="button" class="btn-close btn-close-white"><span class="text-indent">툴팁 닫기</span></button>
+              </div>
+            </div>
+            <!-- //tooltip -->
+            <div class="price display-lg my-1">
+              <a href="/purchase_history.html">
+                <span>120,870</span>
+              </a>
+            </div>
+            <p class="stamp-alert body-md">
+              <span class="price fw-bold">10,000</span>원 추가 구매하면,
+              스탬프 <span class="count">1</span> 더!
+            </p>
+          </div>
+          <div>
+            <div class="d-flex j-between body-md mt-3">
+              <div> 2/13 구매 총액 <i class="icon-info" data-role="tooltip"></i></div>
+              <!-- tooltip : visible -->
+              <div class="tooltip mt-4 ">
+                <div class="d-flex">
+                  <p class="w-100">회원님이 당일 쇼핑몰에서 구매한 총 금액입니다. 단, 안내 내용과 같이 일부 상품 (기프트카드, 여행 등)의 경우에는 제외됩니다.</p>
+                  <button type="button" class="btn-close btn-close-white"><span class="text-indent">툴팁
+                      닫기</span></button>
+                </div>
+              </div>
+              <!-- //tooltip -->
+              <div class="price">
+                <span>1,200,200</span>
+              </div>
+
+            </div>
+            <div class="d-flex j-between body-md mt-2">
+              <div>구매 취소 금액 <i class="icon-info" data-role="tooltip"></i></div>
+              <!-- tooltip : visible -->
+              <div class="tooltip mt-4 ">
+                <div class="d-flex">
+                  <p class="w-100">구매 취소가 발생한 금액으로 당일 구매 취소 총액에 전일 이월 구매 취소 금액을 합산한 잔액입니다.</p>
+                  <button type="button" class="btn-close btn-close-white"><span class="text-indent">툴팁
+                      닫기</span></button>
+                </div>
+              </div>
+              <!-- //tooltip -->
+              <div class="price">
+                <span>30,380</span>
+              </div>
+
+            </div>
+          </div>
+          <div class="d-flex j-between body-md mt-2">
+            <div>적립 예정 스탬프</div>
+            <div class="count">8</div>
+          </div>
+        </div>
+        <div class="stamp-area">
+          <!-- 스탬프 : 하루 적립량 채웠을 때 class 추가 : complete -->
+          <div class="stamp-list-wrap my-7 ">
+            <div class="stamp-box">
+              <ul class="row row-cols-4 g-3">
+                <li class="col flex-column j-start">
+                  <div class="d-flex a-center title">스탬프 <i class="icon-info icon-info-xl" data-role="tooltip"></i></div>
+                  <!-- [D] NP-2211 마크업 변경 -->
+                  <a href="" class="btn-count d-flex a-center">
+                    <span class="count color-primary">456</span>
+                    <i class="icon-arrow-right-primary"></i>
+                  </a>
+                  <!-- //[D] NP-2211 마크업 변경 -->
+
+                  <!-- tooltip : visible  -->
+                  <div class="tooltip ">
+                    <div class="d-flex">
+                      <p class="w-100">
+                        스탬프는 전날 구매한 금액이 3만원 이상인 경우, 다음 날 일괄 적립돼요. (3만원당 1개/일 최대 10개) 10개 적립이 완료되면 룰렛 도전 기회가 자동으로 1번으로
+                        바뀌어 룰렛 도전 기회에 노출됩니다.
+                      </p>
+                      <button type="button" class="btn-close btn-close-white"><span class="text-indent">툴팁 닫기</span></button>
+                    </div>
+                  </div>
+                  <!-- //tooltip  -->
+                </li>
+                <li class="col">
+                  <div class="check-stamp">
+                    <!-- 스탬프 확정 시 : checked 추가  -->
+                    <input type="checkbox" name="stamp" id="1" checked>
+                    <label for="1"></label>
+                  </div>
+                </li>
+                <li class="col">
+                  <div class="check-stamp">
+                    <input type="checkbox" name="stamp" id="2" checked>
+                    <label for="2"></label>
+                  </div>
+                </li>
+                <li class="col">
+                  <div class="check-stamp">
+                    <input type="checkbox" id="3" name="stamp" checked>
+                    <label for="3"></label>
+                  </div>
+                </li>
+                <li class="col">
+                  <div class="check-stamp">
+                    <input type="checkbox" id="4" name="stamp" checked>
+                    <label for="4"></label>
+                  </div>
+                </li>
+                <li class="col">
+                  <div class="check-stamp">
+                    <input type="checkbox" id="5" name="stamp" checked>
+                    <label for="5"></label>
+                  </div>
+                </li>
+                <li class="col">
+                  <div class="check-stamp">
+                    <input type="checkbox" id="6" name="stamp" checked>
+                    <label for="6"></label>
+                  </div>
+                </li>
+                <li class="col">
+                  <div class="check-stamp">
+                    <input type="checkbox" id="7" name="stamp" checked>
+                    <label for="7"></label>
+                  </div>
+                </li>
+                <li class="col">
+                  <div class="check-stamp">
+                    <input type="checkbox" id="8" name="stamp" checked>
+                    <label for="8"></label>
+                  </div>
+                </li>
+                <li class="col">
+                  <div class="check-stamp">
+                    <input type="checkbox" id="9" name="stamp" >
+                    <label for="9"></label>
+                  </div>
+                </li>
+                <li class="col">
+                  <div class="check-stamp">
+                    <input type="checkbox" id="10" name="stamp" >
+                    <label for="10"></label>
+                  </div>
+                </li>
+                <li class="col">
+                  <!-- 룰렛 도전 가능한 경우 : on  -->
+                  <div class="rlt-dare ">
+                    <a href="roulette.html" class="btn-roulette">
+                      <span>룰렛 도전</span>
+                      <em class="num">0</em>
+                    </a>
+                  </div>
+                </li>
+              </ul>
+            </div>
+
+            <!-- 적립 완료  -->
+            <div class="stamp-finish">
+              <div>내일 10개가 적립될 예정이에요! 👏</div>
+              <div class="mt-1">스탬프는 일 최대 10개까지 적립됩니다.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <script>
+        $(document).ready(function() {
+          //스탬프 10개 완료 시 적립 완료 문구 노출
+          var chkObj_cnt = $('input:checkbox[name="stamp"]:checked').length;
+          if(chkObj_cnt == 10) {
+            $('.stamp-list-wrap').addClass('complete');
+          }
+          return false;
+        });
+      </script>
+      <div class="shopping-area">
+        <h3 class="d-flex a-center title">쇼핑 <i class="icon-info icon-info-xl" data-role="tooltip"></i></h3>
+        <!-- tooltip : visible -->
+        <div class="tooltip ">
+          <div class="d-flex">
+            <ul class="flex-fill">
+              <li class="d-flex">Safari 이용자는 &#39;Safari 설정 &gt; 팝업 차단 &gt; 꺼짐&#39;으로 설정되어 있어야 이용 가능합니다.</li>
+              <li class="d-flex">제휴 쇼핑몰은 회사 사정에 따라 사전 공지 없이 변경 및 중단될 수 있습니다.</li>
+            </ul>
+            <button type="button" class="btn-close btn-close-white"><span class="text-indent">툴팁 닫기</span></button>
+          </div>
+        </div>
+        <!-- //tooltip -->
+        <div class="mt-3"> 
+          <!-- 쇼핑몰 리스트 -->
+          <ul class="shopmall-list row row-cols-4 gx-3">
+            <li class="col d-flex j-center">
+              <a href="" target="_blank" title="쿠팡 바로가기">
+                <img src="/static/images/link/coupang.png"
+                  alt="쿠팡">
+              </a>
+            </li>
+            <li class="col d-flex j-center" title="11번가 바로가기">
+              <img src="/static/images/link/11street.png"
+                class="close" alt="11번가">
+            </li>
+            <li class="col d-flex j-center" title="위메프 바로가기">
+              <img src="/static/images/link/wemakeprice.png"
+                class="close" alt="위메프">
+            </li>
+            <li class="col d-flex j-center" title="SSG 바로가기">
+              <img src="/static/images/link/ssg.png"
+                class="close" alt="SSG">
+            </li>
+          </ul>
+        </div>
+
+        <div class="mt-7 d-grid gap-5">
+          <!-- 검색 인풋 하단 상품 노출 -->
+          <!-- ADID false 인 경우 : d-none -->
+          <div>
+            <h3 class="d-flex a-center title-sm mb-3">🛍️ 당신을 위해 준비한 상품</h3>
+            <ul class="product-list-md ratio-4x5 d-grid">
+              <li>
+                <div class="thumb mb-2">
+                  <a href="" aria-label="상품 바로가기" target="_blank" >
+                    <img src="https://ads-partners.coupang.com/image1/wKdEVuzdziIOUEJ7wHwbGPYgHG93Z6LByNvEPuy-ejBkNG6O2dfOAZII-VbeaDa1lwDWdiQpflB1N2pCxD2lN5-xeJmCPgiMu0Rga0n4eVU3K2AQcBr9waCw_rScHIAD47ucaoVf03mwD8KehCoxcGsewz81XmxpWI8BIKgp3bzkWKatuXAe81AGlBzZv-OCtYp9uiKsWbQovzb4dW2_r_ZFGrWcigfOheoCJZ5iPCGZZQGvhwynpahI9PG64luSsGQuCvsfAeN4KcmJ">
+                  </a>
+                </div>
+                <div class="info">
+                  <a href="" aria-label="상품 상세보기" class="article-title" target="_blank">
+                    <span class="text-overflow2">
+                      상품명이 최대 두 줄까지 보여지는 영역
+                    </span>
+                  </a>
+                  <div class="product mt-1 d-flex a-center">
+                    <div class="price">###,###원</div>
+                    <div class="delivery ms-1">
+                      <i class="icon-rocket"></i>
+                      <span class="text-indent">로켓배송</span>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="thumb mb-2">
+                  <a href="" aria-label="상품 바로가기">
+                    <img src="https://ads-partners.coupang.com/image1/wGpn3YHojV_LbjxRwLci8uvthh3pRCNsv4FxdAl_M8_H7I1UHTRNUATUDs5NgSH5xSfBHkqjEPxr9J2oZDZNaYDyJqCwRbEN7vczRxgiP6WL-1x2UvzlDQh3KBZrZo4vBhwMHrbAcf_OdW5eRh30nJafZByogEcGHM5Sf602IJSYoDF9Re92ha_KnrIgBp4Z2n_xzWvvxXWQ0DkwjlecrSaLK-DiEs19n-N1pX4ZGY0oIxJaAKr9IQRwbWT7oxIWF1M4fC5n-HZFwoo=" >
+                  </a>
+                </div>
+                <div class="info">
+                  <a href="" aria-label="상품 상세보기" class="article-title" target="_blank">
+                    <span class="text-overflow2">
+                      닌텐도 스위치 본체 모여봐요 동물의숲 에디션
+                    </span>
+                  </a>
+                  <div class="product mt-1 d-flex a-center">
+                    <div class="price">12,345원</div>
+                    <div class="delivery ms-1 detail">무료배송</div>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div>
+                  <div class="thumb mb-2">
+                    <a href="" aria-label="상품 바로가기">
+                      <img src="https://ads-partners.coupang.com/image1/wGpn3YHojV_LbjxRwLci8uvthh3pRCNsv4FxdAl_M8_H7I1UHTRNUATUDs5NgSH5xSfBHkqjEPxr9J2oZDZNaYDyJqCwRbEN7vczRxgiP6WL-1x2UvzlDQh3KBZrZo4vBhwMHrbAcf_OdW5eRh30nJafZByogEcGHM5Sf602IJSYoDF9Re92ha_KnrIgBp4Z2n_xzWvvxXWQ0DkwjlecrSaLK-DiEs19n-N1pX4ZGY0oIxJaAKr9IQRwbWT7oxIWF1M4fC5n-HZFwoo=" >
+                    </a>
+                  </div>
+                  <div class="info">
+                    <a href="" aria-label="상품 상세보기" class="article-title" target="_blank">
+                      <span class="text-overflow2">
+                        닌텐도 스위치 본체 모여봐요 동물의숲 에디션
+                      </span>
+                    </a>
+                    <div class="product mt-1 d-flex a-center">
+                      <div class="price">12,345원</div>
+                      <div class="delivery ms-1 detail">무료배송</div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div>
+                  <div class="thumb mb-2">
+                    <a href="" aria-label="상품 바로가기">
+                      <img src="https://ads-partners.coupang.com/image1/NC_wX6K75sxcSE7iNGAA5zlOlnVMjGykHcZlYeM0fWXa_h-zov7hV9rn9WU7L-sKM-HEd0mOTe2JhvreH_EzGfuG0iVzMy5vCMWLxi63xZK9oh1zJNeobLVmRtJ1CZeoLWFaYATPY5jQRHn1PoiNek2Re_9y1YhM0JG0epre5coZzQi5_NbOk95kLw-2cCoOfuDHH2Ukti8IgF621JzzvlATCekWL1_cc_bySGbgqIFgekKvsJ2v4mQ1Mp8RhOl3wqSJ5NNDM4Gjz0eBBt99w82RG7Hh4B4m3Y3-" >
+                    </a>
+                  </div>
+                  <div class="info">
+                    <a href="" aria-label="상품 상세보기" class="article-title" target="_blank">
+                      <span class="text-overflow2">
+                        닌텐도 스위치
+                      </span>
+                    </a>
+                    <div class="product mt-1 d-flex a-center">
+                      <div class="price">12,345원</div>
+                      <div class="delivery ms-1">
+                        <i class="icon-rocket"></i>
+                        <span class="text-indent">로켓배송</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+  
+              <!-- 스켈레톤 -->
+              <li class="placeholder-glow" aria-hidden="true">
+                <div class="thumb mb-2">
+                  <a href="" class="placeholder"></a>
+                </div>
+                <div class="info placeholder-glow">
+                  <div class="article-title placeholder"></div>
+                  <div class="product placeholder"></div>
+                </div>
+              </li>
+              <li class="placeholder-glow" aria-hidden="true">
+                <div class="thumb mb-2">
+                  <a href="" class="placeholder"></a>
+                </div>
+                <div class="info placeholder-glow">
+                  <div class="article-title placeholder"></div>
+                  <div class="product placeholder"></div>
+                </div>
+              </li>
+              <li class="placeholder-glow" aria-hidden="true">
+                <div class="thumb mb-2">
+                  <a href="" class="placeholder"></a>
+                </div>
+                <div class="info placeholder-glow">
+                  <div class="article-title placeholder"></div>
+                  <div class="product placeholder"></div>
+                </div>
+              </li>
+              <li class="placeholder-glow" aria-hidden="true">
+                <div class="thumb mb-2">
+                  <a href="" class="placeholder"></a>
+                </div>
+                <div class="info placeholder-glow">
+                  <div class="article-title placeholder"></div>
+                  <div class="product placeholder"></div>
+                </div>
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <h3 class="d-flex a-center title-sm mb-3">🛒 구매 많은 상품</h3>
+            <!-- 구매 많은 상품 리스트 -->
+            <div>
+              <div>
+                <p class="lbl">식품</p>
+                <ul class="product-list-sm d-grid">
+                  <li>
+                    <div class="thumb mb-2">
+                      <a href="" aria-label="상품 바로가기" target="_blank">
+                        <img src="https://ads-partners.coupang.com/image1/wKdEVuzdziIOUEJ7wHwbGPYgHG93Z6LByNvEPuy-ejBkNG6O2dfOAZII-VbeaDa1lwDWdiQpflB1N2pCxD2lN5-xeJmCPgiMu0Rga0n4eVU3K2AQcBr9waCw_rScHIAD47ucaoVf03mwD8KehCoxcGsewz81XmxpWI8BIKgp3bzkWKatuXAe81AGlBzZv-OCtYp9uiKsWbQovzb4dW2_r_ZFGrWcigfOheoCJZ5iPCGZZQGvhwynpahI9PG64luSsGQuCvsfAeN4KcmJ">
+                      </a>
+                    </div>
+                    <div class="info">
+                      <a href="" aria-label="상품 상세보기" class="article-title" target="_blank">
+                        <span class="text-overflow2">
+                          상품명이 최대 두 줄까지 보여지는 영역
+                        </span>
+                      </a>
+                      <div class="product mt-1">
+                        <div class="price">###,###원</div>
+                        <div class="delivery">
+                          <i class="icon-rocket"></i>
+                          <span class="text-indent">로켓배송</span>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="thumb mb-2">
+                      <a href="" aria-label="상품 바로가기" target="_blank">
+                        <img src="https://ads-partners.coupang.com/image1/wKdEVuzdziIOUEJ7wHwbGPYgHG93Z6LByNvEPuy-ejBkNG6O2dfOAZII-VbeaDa1lwDWdiQpflB1N2pCxD2lN5-xeJmCPgiMu0Rga0n4eVU3K2AQcBr9waCw_rScHIAD47ucaoVf03mwD8KehCoxcGsewz81XmxpWI8BIKgp3bzkWKatuXAe81AGlBzZv-OCtYp9uiKsWbQovzb4dW2_r_ZFGrWcigfOheoCJZ5iPCGZZQGvhwynpahI9PG64luSsGQuCvsfAeN4KcmJ">
+                      </a>
+                    </div>
+                    <div class="info">
+                      <a href="" aria-label="상품 상세보기" class="article-title" target="_blank">
+                        <span class="text-overflow2">
+                          상품 명칭
+                        </span>
+                      </a>
+                      <div class="product mt-1">
+                        <div class="price">###,###원</div>
+                        <div class="delivery">
+                          무료배송
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="thumb mb-2">
+                      <a href="" aria-label="상품 바로가기" target="_blank">
+                        <img src="https://ads-partners.coupang.com/image1/wKdEVuzdziIOUEJ7wHwbGPYgHG93Z6LByNvEPuy-ejBkNG6O2dfOAZII-VbeaDa1lwDWdiQpflB1N2pCxD2lN5-xeJmCPgiMu0Rga0n4eVU3K2AQcBr9waCw_rScHIAD47ucaoVf03mwD8KehCoxcGsewz81XmxpWI8BIKgp3bzkWKatuXAe81AGlBzZv-OCtYp9uiKsWbQovzb4dW2_r_ZFGrWcigfOheoCJZ5iPCGZZQGvhwynpahI9PG64luSsGQuCvsfAeN4KcmJ">
+                      </a>
+                    </div>
+                    <div class="info">
+                      <a href="" aria-label="상품 상세보기" class="article-title" target="_blank">
+                        <span class="text-overflow2">
+                          상품명이 최대 두 줄까지 보여지는 영역
+                        </span>
+                      </a>
+                      <div class="product mt-1">
+                        <div class="price">###,###원</div>
+                        <div class="delivery">
+                          <i class="icon-rocket"></i>
+                          <span class="text-indent">로켓배송</span>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="thumb mb-2">
+                      <a href="" aria-label="상품 바로가기" target="_blank">
+                        <img src="https://ads-partners.coupang.com/image1/wKdEVuzdziIOUEJ7wHwbGPYgHG93Z6LByNvEPuy-ejBkNG6O2dfOAZII-VbeaDa1lwDWdiQpflB1N2pCxD2lN5-xeJmCPgiMu0Rga0n4eVU3K2AQcBr9waCw_rScHIAD47ucaoVf03mwD8KehCoxcGsewz81XmxpWI8BIKgp3bzkWKatuXAe81AGlBzZv-OCtYp9uiKsWbQovzb4dW2_r_ZFGrWcigfOheoCJZ5iPCGZZQGvhwynpahI9PG64luSsGQuCvsfAeN4KcmJ">
+                      </a>
+                    </div>
+                    <div class="info">
+                      <a href="" aria-label="상품 상세보기" class="article-title" target="_blank">
+                        <span class="text-overflow2">
+                          상품명이 최대 두 줄까지 보여지는 영역
+                        </span>
+                      </a>
+                      <div class="product mt-1">
+                        <div class="price">###,###원</div>
+                        <div class="delivery">
+                          <i class="icon-rocket"></i>
+                          <span class="text-indent">로켓배송</span>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="thumb mb-2">
+                      <a href="" aria-label="상품 바로가기" target="_blank">
+                        <img src="https://ads-partners.coupang.com/image1/wKdEVuzdziIOUEJ7wHwbGPYgHG93Z6LByNvEPuy-ejBkNG6O2dfOAZII-VbeaDa1lwDWdiQpflB1N2pCxD2lN5-xeJmCPgiMu0Rga0n4eVU3K2AQcBr9waCw_rScHIAD47ucaoVf03mwD8KehCoxcGsewz81XmxpWI8BIKgp3bzkWKatuXAe81AGlBzZv-OCtYp9uiKsWbQovzb4dW2_r_ZFGrWcigfOheoCJZ5iPCGZZQGvhwynpahI9PG64luSsGQuCvsfAeN4KcmJ">
+                      </a>
+                    </div>
+                    <div class="info">
+                      <a href="" aria-label="상품 상세보기" class="article-title" target="_blank">
+                        <span class="text-overflow2">
+                          상품 명칭
+                        </span>
+                      </a>
+                      <div class="product mt-1">
+                        <div class="price">###,###원</div>
+                        <div class="delivery">
+                          무료배송
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="thumb mb-2">
+                      <a href="" aria-label="상품 바로가기" target="_blank">
+                        <img src="https://ads-partners.coupang.com/image1/wKdEVuzdziIOUEJ7wHwbGPYgHG93Z6LByNvEPuy-ejBkNG6O2dfOAZII-VbeaDa1lwDWdiQpflB1N2pCxD2lN5-xeJmCPgiMu0Rga0n4eVU3K2AQcBr9waCw_rScHIAD47ucaoVf03mwD8KehCoxcGsewz81XmxpWI8BIKgp3bzkWKatuXAe81AGlBzZv-OCtYp9uiKsWbQovzb4dW2_r_ZFGrWcigfOheoCJZ5iPCGZZQGvhwynpahI9PG64luSsGQuCvsfAeN4KcmJ">
+                      </a>
+                    </div>
+                    <div class="info">
+                      <a href="" aria-label="상품 상세보기" class="article-title" target="_blank">
+                        <span class="text-overflow2">
+                          상품명이 최대 두 줄까지 보여지는 영역
+                        </span>
+                      </a>
+                      <div class="product mt-1">
+                        <div class="price">###,###원</div>
+                        <div class="delivery">
+                          <i class="icon-rocket"></i>
+                          <span class="text-indent">로켓배송</span>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="my-7">
+                <p class="lbl">생활용품</p>
+                <ul class="product-list-sm d-grid">
+                  <!-- 스켈레톤 -->
+                  <li class="placeholder-glow" aria-hidden="true">
+                    <div class="thumb mb-2">
+                      <a href="" class="placeholder"></a>
+                    </div>
+                    <div class="info placeholder-glow">
+                      <a href="" class="article-title placeholder"></a>
+                      <div class="product placeholder"></div>
+                      <div class="delivery placeholder"></div>
+                    </div>
+                  </li>
+                  <li class="placeholder-glow" aria-hidden="true">
+                    <div class="thumb mb-2">
+                      <a href="" class="placeholder"></a>
+                    </div>
+                    <div class="info placeholder-glow">
+                      <a href="" class="article-title placeholder"></a>
+                      <div class="product placeholder"></div>
+                      <div class="delivery placeholder"></div>
+                    </div>
+                  </li>
+                  <li class="placeholder-glow" aria-hidden="true">
+                    <div class="thumb mb-2">
+                      <a href="" class="placeholder"></a>
+                    </div>
+                    <div class="info placeholder-glow">
+                      <a href="" class="article-title placeholder"></a>
+                      <div class="product placeholder"></div>
+                      <div class="delivery placeholder"></div>
+                    </div>
+                  </li>
+                  <li class="placeholder-glow" aria-hidden="true">
+                    <div class="thumb mb-2">
+                      <a href="" class="placeholder"></a>
+                    </div>
+                    <div class="info placeholder-glow">
+                      <a href="" class="article-title placeholder"></a>
+                      <div class="product placeholder"></div>
+                      <div class="delivery placeholder"></div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="my-7">
+                <p class="lbl">뷰티</p>
+                <ul class="product-list-sm d-grid">
+                  <!-- 스켈레톤 -->
+                  <li class="placeholder-glow" aria-hidden="true">
+                    <div class="thumb mb-2">
+                      <a href="" class="placeholder"></a>
+                    </div>
+                    <div class="info placeholder-glow">
+                      <a href="" class="article-title placeholder"></a>
+                      <div class="product placeholder"></div>
+                      <div class="delivery placeholder"></div>
+                    </div>
+                  </li>
+                  <li class="placeholder-glow" aria-hidden="true">
+                    <div class="thumb mb-2">
+                      <a href="" class="placeholder"></a>
+                    </div>
+                    <div class="info placeholder-glow">
+                      <a href="" class="article-title placeholder"></a>
+                      <div class="product placeholder"></div>
+                      <div class="delivery placeholder"></div>
+                    </div>
+                  </li>
+                  <li class="placeholder-glow" aria-hidden="true">
+                    <div class="thumb mb-2">
+                      <a href="" class="placeholder"></a>
+                    </div>
+                    <div class="info placeholder-glow">
+                      <a href="" class="article-title placeholder"></a>
+                      <div class="product placeholder"></div>
+                      <div class="delivery placeholder"></div>
+                    </div>
+                  </li>
+                  <li class="placeholder-glow" aria-hidden="true">
+                    <div class="thumb mb-2">
+                      <a href="" class="placeholder"></a>
+                    </div>
+                    <div class="info placeholder-glow">
+                      <a href="" class="article-title placeholder"></a>
+                      <div class="product placeholder"></div>
+                      <div class="delivery placeholder"></div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="my-7">
+                <p class="lbl">가전디지털</p>
+                <ul class="product-list-sm d-grid">
+                  <!-- 스켈레톤 -->
+                  <li class="placeholder-glow" aria-hidden="true">
+                    <div class="thumb mb-2">
+                      <a href="" class="placeholder"></a>
+                    </div>
+                    <div class="info placeholder-glow">
+                      <a href="" class="article-title placeholder"></a>
+                      <div class="product placeholder"></div>
+                      <div class="delivery placeholder"></div>
+                    </div>
+                  </li>
+                  <li class="placeholder-glow" aria-hidden="true">
+                    <div class="thumb mb-2">
+                      <a href="" class="placeholder"></a>
+                    </div>
+                    <div class="info placeholder-glow">
+                      <a href="" class="article-title placeholder"></a>
+                      <div class="product placeholder"></div>
+                      <div class="delivery placeholder"></div>
+                    </div>
+                  </li>
+                  <li class="placeholder-glow" aria-hidden="true">
+                    <div class="thumb mb-2">
+                      <a href="" class="placeholder"></a>
+                    </div>
+                    <div class="info placeholder-glow">
+                      <a href="" class="article-title placeholder"></a>
+                      <div class="product placeholder"></div>
+                      <div class="delivery placeholder"></div>
+                    </div>
+                  </li>
+                  <li class="placeholder-glow" aria-hidden="true">
+                    <div class="thumb mb-2">
+                      <a href="" class="placeholder"></a>
+                    </div>
+                    <div class="info placeholder-glow">
+                      <a href="" class="article-title placeholder"></a>
+                      <div class="product placeholder"></div>
+                      <div class="delivery placeholder"></div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <!-- //구매 많은 상품 리스트 -->
+          </div>
+          
+        </div>
+    </div>
+  </main>
+  <%-include('inc/footer.html')%>
+
+  <!-- iOS 사파리 홈화면 추가 안내 팝업 -->
+  <!--  팝업 추가 시 "$('#iossafariModal').modal('show');" -->
+  <div class="modal fade" id="iossafariModal" tabindex="-1" data-bs-backdrop="static">
+    <div class="modal-dialog modal-dialog-centered flex-column j-center">
+      <div class="modal-content">
+        <div>
+          <div class="modal-header bg-modal">
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close">
+              <span class="text-indent">닫기</span>
+            </button>
+          </div>
+          <div class="modal-body text-center bg-modal">
+            <div class="d-flex flex-column a-center">
+              <p class="icon"></p>
+              <div class="title mt-3">스탬플리</div>
+              <div>앱을 <span class="color-primary">홈 화면에 추가</span>해 보세요 <br>더 쉽게 접속할 수 있어요!</div>
+              <p class="body-md mt-2 text-gray">하단 탭 - ‘홈 화면에 추가’</p>
+              <p class="modal-img">
+                <span class="text-indent">사파리 화면 추가 이미지</span>
+              </p>
+            </div>
+          </div>
+          <a href="" target="_blank" class="btn-text-close" data-bs-dismiss="modal" aria-label="Close">다시 보지 않기</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
